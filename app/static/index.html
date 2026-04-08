@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chemistry Course AI Tutor</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Chemistry Course Support</p>
+        <h1>Chemistry Course AI Tutor</h1>
+        <p class="lede">
+          Upload course PDFs, then ask chemistry questions grounded in those materials.
+        </p>
+      </section>
+
+      <section class="panel">
+        <form id="upload-form" class="upload-form">
+          <label for="pdf-files">Course PDFs</label>
+          <input id="pdf-files" name="files" type="file" accept=".pdf" multiple />
+          <button type="submit">Upload And Reindex</button>
+          <p id="upload-status" class="status"></p>
+        </form>
+      </section>
+
+      <section class="panel chat-panel">
+        <div id="messages" class="messages"></div>
+
+        <form id="chat-form" class="chat-form">
+          <textarea
+            id="question"
+            name="question"
+            rows="3"
+            placeholder="Ask a chemistry question based on the uploaded course materials"
+          ></textarea>
+          <div class="actions">
+            <span id="chat-status" class="status"></span>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <template id="message-template">
+      <article class="message">
+        <header class="message-header"></header>
+        <p class="message-body"></p>
+        <details class="sources">
+          <summary>Sources</summary>
+          <div class="source-list"></div>
+        </details>
+      </article>
+    </template>
+
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
