@@ -23,13 +23,13 @@ uploadForm.addEventListener("submit", async (event) => {
   }
 
   try {
-    const response = await fetch("/upload", {
+    const response = await fetch("/api/v1/documents", {
       method: "POST",
       body: formData,
     });
-    const payload = await response.json();
+    const payload = await readResponse(response);
     if (!response.ok) {
-      throw new Error(payload.detail || "Upload failed.");
+      throw new Error(getErrorMessage(payload, "Upload failed."));
     }
     uploadStatus.textContent = `${payload.message} ${payload.chunks_indexed} chunks indexed.`;
   } catch (error) {
@@ -51,16 +51,16 @@ chatForm.addEventListener("submit", async (event) => {
   chatStatus.textContent = "Thinking...";
 
   try {
-    const response = await fetch("/chat", {
+    const response = await fetch("/api/v1/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ question }),
     });
-    const payload = await response.json();
+    const payload = await readResponse(response);
     if (!response.ok) {
-      throw new Error(payload.detail || "Request failed.");
+      throw new Error(getErrorMessage(payload, "Request failed."));
     }
 
     appendMessage("Tutor", payload.answer, payload.sources);
@@ -99,4 +99,26 @@ function appendMessage(author, body, sources = []) {
 
   messages.append(node);
   node.scrollIntoView({ behavior: "smooth", block: "end" });
+}
+
+async function readResponse(response) {
+  const contentType = response.headers.get("content-type") || "";
+  if (contentType.includes("application/json")) {
+    return response.json();
+  }
+
+  const text = await response.text();
+  return { detail: text || response.statusText };
+}
+
+function getErrorMessage(payload, fallbackMessage) {
+  if (!payload) {
+    return fallbackMessage;
+  }
+
+  if (typeof payload.detail === "string" && payload.detail.trim()) {
+    return payload.detail;
+  }
+
+  return fallbackMessage;
 }
