@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "case_id": "CA1",
+      "case_name": "Matter vs not matter",
+      "user_query": "Which of these is matter and which is not matter: air, a tree, and love?",
+      "expected_behavior": "Correctly identify air and a tree as matter, and love as not matter."
+    },
+    {
+      "case_id": "CA2",
+      "case_name": "Physical vs chemical change",
+      "user_query": "Is bread baking a physical change or a chemical change? What about water boiling?",
+      "expected_behavior": "Correctly classify bread baking as chemical change and water boiling as physical change."
+    },
+    {
+      "case_id": "CA3",
+      "case_name": "Element, compound, mixture",
+      "user_query": "What is the difference between an element, a compound, and a mixture?",
+      "expected_behavior": "Give accurate textbook-aligned distinctions among elements, compounds, and mixtures."
+    },
+    {
+      "case_id": "CA4",
+      "case_name": "Homogeneous vs heterogeneous mixture",
+      "user_query": "Is salt dissolved in water homogeneous or heterogeneous? What about iron filings mixed with sulfur powder?",
+      "expected_behavior": "Correctly identify salt water as homogeneous and iron plus sulfur as heterogeneous."
+    },
+    {
+      "case_id": "CA5",
+      "case_name": "Metal vs nonmetal properties",
+      "user_query": "What properties make an element a metal instead of a nonmetal?",
+      "expected_behavior": "Mention conductivity, luster, malleability, ductility for metals and contrasting nonmetal properties."
+    },
+    {
+      "case_id": "CA6",
+      "case_name": "Science, hypothesis, theory, law",
+      "user_query": "What is the difference between a hypothesis, a theory, and a law in science?",
+      "expected_behavior": "Accurately explain the distinctions as presented in the science chapter."
+    },
+    {
+      "case_id": "CA7",
+      "case_name": "Scientific notation",
+      "user_query": "Write 79,345 in scientific notation and explain what the exponent means.",
+      "expected_behavior": "Give 7.9345 x 10^4 and explain exponent meaning correctly."
+    },
+    {
+      "case_id": "CA8",
+      "case_name": "SI prefixes",
+      "user_query": "What do the prefixes kilo-, milli-, and micro- mean in SI units?",
+      "expected_behavior": "Correctly define the multiplicative values for those prefixes."
+    },
+    {
+      "case_id": "CA9",
+      "case_name": "Significant figures",
+      "user_query": "How many significant figures are in 0.00450?",
+      "expected_behavior": "Correctly identify 3 significant figures and explain why."
+    },
+    {
+      "case_id": "CA10",
+      "case_name": "Unit conversion",
+      "user_query": "How many meters are in 5.0 kilometers?",
+      "expected_behavior": "Correctly convert to 5000 m or equivalent."
+    },
+    {
+      "case_id": "CA11",
+      "case_name": "Atomic structure basics",
+      "user_query": "What are protons, neutrons, and electrons, and where are they located in an atom?",
+      "expected_behavior": "Correctly describe particle charges and locations."
+    },
+    {
+      "case_id": "CA12",
+      "case_name": "Isotopes",
+      "user_query": "What makes one isotope of an element different from another isotope of the same element?",
+      "expected_behavior": "Explain that isotopes differ by neutron number, not proton number."
+    },
+    {
+      "case_id": "CA13",
+      "case_name": "Ionic vs covalent bonding",
+      "user_query": "What is the difference between ionic bonding and covalent bonding?",
+      "expected_behavior": "Correctly contrast electron transfer with electron sharing."
+    },
+    {
+      "case_id": "CA14",
+      "case_name": "Chemical equation meaning",
+      "user_query": "What does a balanced chemical equation tell us about a reaction?",
+      "expected_behavior": "Explain conservation of atoms and stoichiometric relationships."
+    },
+    {
+      "case_id": "CA15",
+      "case_name": "Mole concept",
+      "user_query": "What is a mole in chemistry, and why is it useful?",
+      "expected_behavior": "Give an accurate conceptual explanation of the mole as a counting unit for particles."
+    },
+    {
+      "case_id": "CA16",
+      "case_name": "Stoichiometric coefficients",
+      "user_query": "In the equation 2H2 + O2 -> 2H2O, what do the coefficients tell us?",
+      "expected_behavior": "Correctly interpret the mole ratios among reactants and products."
+    },
+    {
+      "case_id": "CA17",
+      "case_name": "Gas law concept",
+      "user_query": "According to Boyle's law, what happens to gas volume when pressure increases at constant temperature?",
+      "expected_behavior": "State the inverse relationship correctly."
+    },
+    {
+      "case_id": "CA18",
+      "case_name": "Acid and base basics",
+      "user_query": "What does pH tell us, and what does it mean if pH is below 7 or above 7?",
+      "expected_behavior": "Correctly explain pH, acidity below 7, neutrality at 7, and basicity above 7."
+    },
+    {
+      "case_id": "CA19",
+      "case_name": "Oxidation numbers",
+      "user_query": "What are oxidation numbers used for in chemistry?",
+      "expected_behavior": "Explain their role as bookkeeping values in redox reactions."
+    },
+    {
+      "case_id": "CA20",
+      "case_name": "Organic chemistry intro",
+      "user_query": "What makes organic chemistry different from the rest of general chemistry in an introductory course?",
+      "expected_behavior": "Give a high-level textbook-consistent description centered on carbon-containing compounds and introductory scope."
+    }
+  ]
+}
