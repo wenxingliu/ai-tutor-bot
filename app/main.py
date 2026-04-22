@@ -14,12 +14,14 @@ from app.config import settings
 from app.services.openai_service import OpenAIService
 from app.services.tutor import TutorService
 from app.services.vector_store import SQLiteVectorStore
+from app.tracing import configure_tracing
 
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s [%(name)s] %(message)s",
 )
+configure_tracing()
 
 app = FastAPI(title=settings.app_name)
 app.add_middleware(

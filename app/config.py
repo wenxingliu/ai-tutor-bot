@@ -23,6 +23,9 @@ class Settings:
     tutor_model: str = os.getenv("OPENAI_TUTOR_MODEL", "gpt-5.4-nano")
     embedding_model: str = os.getenv("OPENAI_EMBEDDING_MODEL", "text-embedding-3-small")
     openai_api_key: str | None = os.getenv("OPENAI_API_KEY")
+    phoenix_enable_tracing: bool = os.getenv("PHOENIX_ENABLE_TRACING", "false").lower() == "true"
+    phoenix_project_name: str = os.getenv("PHOENIX_PROJECT_NAME", "chemistry-course-ai-tutor")
+    phoenix_collector_endpoint: str | None = os.getenv("PHOENIX_COLLECTOR_ENDPOINT")
 
 
 settings = Settings()

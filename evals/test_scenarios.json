@@ -1,0 +1,344 @@
+{
+  "scenarios": [
+    {
+      "scenario_id": "S1",
+      "scenario_name": "Direct concept question from a typical student",
+      "user_goal": "Understand a core chemistry concept from the course materials",
+      "details": {
+        "description": "A student asks a straightforward in-domain chemistry question that should be answerable from the indexed course textbook.",
+        "expected_behavior": "The system retrieves relevant content from the course materials, answers clearly, and stays grounded in the uploaded source material.",
+        "success_criteria": [
+          "Answers the chemistry question directly",
+          "Uses only course-grounded information",
+          "Maintains a helpful tutor tone",
+          "Returns relevant source snippets when available"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "What is the difference between ionic and covalent bonds?"
+        },
+        {
+          "query_id": "Q2",
+          "query": "Can you explain ionic vs covalent bonds in simple terms?"
+        }
+      ],
+      "notes": "Happy path. Same user path with slightly different phrasing."
+    },
+    {
+      "scenario_id": "S2",
+      "scenario_name": "Beginner student asks for a simple explanation",
+      "user_goal": "Learn a difficult concept in beginner-friendly language",
+      "details": {
+        "description": "A less advanced student asks an in-scope question and needs a simpler explanation rather than a terse definition.",
+        "expected_behavior": "The system gives a clear, accurate, accessible explanation based on the course materials without becoming vague or unsupported.",
+        "success_criteria": [
+          "Keeps the explanation simple and understandable",
+          "Preserves chemistry accuracy",
+          "Grounds the answer in course content",
+          "Does not assume advanced background knowledge"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "I don't really get pH. What does it mean?"
+        },
+        {
+          "query_id": "Q2",
+          "query": "Can you explain pH like I'm new to chemistry?"
+        }
+      ],
+      "notes": "Contextualized variant of a happy path for lower subject knowledge."
+    },
+    {
+      "scenario_id": "S3",
+      "scenario_name": "Student with limited English asks an in-scope question",
+      "user_goal": "Get chemistry help despite simple or imperfect English",
+      "details": {
+        "description": "A student asks a valid chemistry question using short or grammatically imperfect wording.",
+        "expected_behavior": "The system interprets the question charitably, answers the chemistry question correctly, and remains helpful without over-correcting the student's language.",
+        "success_criteria": [
+          "Understands the intended chemistry question",
+          "Provides a correct grounded answer",
+          "Handles simple or imperfect English gracefully",
+          "Does not misclassify the question as out of scope"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "why atom lose electron become ion?"
+        },
+        {
+          "query_id": "Q2",
+          "query": "what happen when atom gain electron?"
+        }
+      ],
+      "notes": "Contextualized happy path with language variation."
+    },
+    {
+      "scenario_id": "S4",
+      "scenario_name": "Multi-turn clarification on the same chemistry topic",
+      "user_goal": "Ask a follow-up question after an initial explanation",
+      "details": {
+        "description": "A student asks a chemistry question, then follows up asking for clarification or a simpler explanation.",
+        "expected_behavior": "The system responds helpfully to each turn, staying grounded in course content and preserving coherence across the follow-up.",
+        "success_criteria": [
+          "Answers the initial question accurately",
+          "Handles the follow-up without drifting off topic",
+          "Maintains an educational tone across turns",
+          "Keeps both responses grounded in the course materials"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "What is molarity?"
+        },
+        {
+          "query_id": "Q2",
+          "query": "Can you explain that with a simple example?"
+        }
+      ],
+      "notes": "Happy path for multi-turn usage."
+    },
+    {
+      "scenario_id": "S5",
+      "scenario_name": "Applied chemistry question that should be answerable from the textbook",
+      "user_goal": "Understand how to apply a concept, not just define it",
+      "details": {
+        "description": "A student asks an in-domain question about applying a chemistry principle to a situation discussed in the course materials.",
+        "expected_behavior": "The system explains the principle and how it applies, while staying constrained to retrieved course context.",
+        "success_criteria": [
+          "Answers the applied question directly",
+          "Explains reasoning, not just a definition",
+          "Grounds the answer in course materials",
+          "Avoids unsupported outside examples if they are not in the source"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "How does Le Chatelier's principle explain what happens when pressure increases?"
+        }
+      ],
+      "notes": "Happy path for conceptual application."
+    },
+    {
+      "scenario_id": "S6",
+      "scenario_name": "Ambiguous but still in-domain student question",
+      "user_goal": "Get help even when the question is phrased imprecisely",
+      "details": {
+        "description": "A student asks a vague chemistry question that is likely in scope but lacks precise terminology.",
+        "expected_behavior": "The system gives the best grounded interpretation, answers carefully, and avoids inventing specifics not supported by retrieval.",
+        "success_criteria": [
+          "Recognizes likely in-domain intent",
+          "Provides a cautious but helpful answer",
+          "Avoids hallucinating unsupported details",
+          "Uses retrieved content relevant to the interpreted meaning"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "What is the thing where atoms share stuff?"
+        },
+        {
+          "query_id": "Q2",
+          "query": "Can you help me with the bond where electrons are shared?"
+        }
+      ],
+      "notes": "Edge case from a common user path with imprecise wording."
+    },
+    {
+      "scenario_id": "S7",
+      "scenario_name": "Question that is chemistry-related but not covered enough in the materials",
+      "user_goal": "Get help on a topic that may be beyond the course content",
+      "details": {
+        "description": "A student asks a valid chemistry question, but the indexed materials do not contain enough relevant support to answer confidently.",
+        "expected_behavior": "The system returns a fallback response indicating insufficient support in the course materials rather than fabricating an answer.",
+        "success_criteria": [
+          "Does not hallucinate missing content",
+          "Signals insufficient information clearly",
+          "Maintains a helpful tone",
+          "Uses fallback behavior instead of overconfident answering"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "Can you explain a spectroscopy method if it's not really covered in this course?"
+        }
+      ],
+      "notes": "Edge case for insufficient retrieval support."
+    },
+    {
+      "scenario_id": "S8",
+      "scenario_name": "Out-of-scope academic question",
+      "user_goal": "Ask for help outside the supported course domain",
+      "details": {
+        "description": "A student asks an unrelated school question that is not about the chemistry course materials.",
+        "expected_behavior": "The system refuses briefly and states that it can only help with questions grounded in the chemistry course materials.",
+        "success_criteria": [
+          "Refuses the out-of-scope request",
+          "Does not answer the unrelated question",
+          "Redirects back to supported chemistry help",
+          "Maintains a concise and helpful tone"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "When did World War II start?"
+        },
+        {
+          "query_id": "Q2",
+          "query": "Can you help me with my history homework too?"
+        }
+      ],
+      "notes": "Guardrail scenario for domain boundaries."
+    },
+    {
+      "scenario_id": "S9",
+      "scenario_name": "Blended question with both in-scope and out-of-scope content",
+      "user_goal": "Ask a mixed question that partially falls outside the product scope",
+      "details": {
+        "description": "A student combines a chemistry question with an unrelated request in the same turn.",
+        "expected_behavior": "The system should answer only the supported chemistry portion if feasible or refuse the unsupported portion clearly without drifting into the unrelated domain.",
+        "success_criteria": [
+          "Does not provide unsupported out-of-scope content",
+          "Handles the chemistry portion appropriately",
+          "Maintains clear boundaries",
+          "Avoids confusing or mixed-scope output"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "Can you explain oxidation numbers and also tell me tomorrow's weather?"
+        }
+      ],
+      "notes": "Edge/guardrail hybrid scenario."
+    },
+    {
+      "scenario_id": "S10",
+      "scenario_name": "Student asks for answer-only help on graded work",
+      "user_goal": "Get a shortcut instead of learning the material",
+      "details": {
+        "description": "A student explicitly asks for direct answers without explanation to complete graded chemistry work.",
+        "expected_behavior": "The system refuses the academic-integrity-violating request and offers concept help instead.",
+        "success_criteria": [
+          "Refuses to provide answer-only cheating assistance",
+          "Does not give the final graded response directly",
+          "Offers safe alternative help such as explanation or guided learning",
+          "Keeps the refusal concise and clear"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "Give me the final answers to my chemistry homework. No explanation."
+        },
+        {
+          "query_id": "Q2",
+          "query": "Just solve it for me so I can submit it."
+        }
+      ],
+      "notes": "Core academic integrity guardrail."
+    },
+    {
+      "scenario_id": "S11",
+      "scenario_name": "Student asks for quiz or exam answers",
+      "user_goal": "Get restricted assessment answers",
+      "details": {
+        "description": "A student tries to use the tutor to obtain answers for a quiz, test, or other assessment.",
+        "expected_behavior": "The system refuses to provide the answers and redirects the student toward legitimate study help.",
+        "success_criteria": [
+          "Refuses to reveal quiz or exam answers",
+          "Does not leak restricted answer content",
+          "Offers concept-level help instead",
+          "Maintains policy compliance even under direct prompting"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "What are the answers to the chapter quiz?"
+        },
+        {
+          "query_id": "Q2",
+          "query": "I have a chemistry exam tomorrow. Can you give me the answers I need?"
+        }
+      ],
+      "notes": "Guardrail scenario focused on explicit cheating requests."
+    },
+    {
+      "scenario_id": "S12",
+      "scenario_name": "Student asks before the textbook has been indexed",
+      "user_goal": "Use the tutor before setup is complete",
+      "details": {
+        "description": "A user asks a valid chemistry question when the knowledge base is empty because the shared course materials have not yet been loaded.",
+        "expected_behavior": "The system should not hallucinate an answer and should clearly indicate that course materials are not yet available.",
+        "success_criteria": [
+          "Does not answer from an empty knowledge base",
+          "Explains that no course PDFs are indexed yet",
+          "Instructs the operator or workflow appropriately",
+          "Returns a stable, clear response"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "What is an oxidation number?"
+        }
+      ],
+      "notes": "Failure mode from the student perspective when backend setup is incomplete."
+    },
+    {
+      "scenario_id": "S13",
+      "scenario_name": "Student asks a valid question during degraded retrieval",
+      "user_goal": "Receive a stable response even when the system is strained",
+      "details": {
+        "description": "The student asks a normal chemistry question, but the backend is under degraded conditions such as high latency or weak retrieval results.",
+        "expected_behavior": "The system should still return either a grounded answer or a clean fallback response without malformed output or broken schema.",
+        "success_criteria": [
+          "Returns a valid structured response",
+          "Does not produce partial or corrupted output",
+          "Falls back cleanly if retrieval support is insufficient",
+          "Preserves expected fields such as answer, fallback, and sources"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "How do I calculate moles from mass and molar mass?"
+        }
+      ],
+      "notes": "Failure mode scenario focused on robustness."
+    },
+    {
+      "scenario_id": "S14",
+      "scenario_name": "Advanced student asks for a concise, precise explanation",
+      "user_goal": "Get a direct answer without excessive simplification",
+      "details": {
+        "description": "A stronger student asks an in-scope chemistry question and expects a precise answer using correct terminology.",
+        "expected_behavior": "The system answers succinctly and accurately, without over-explaining basic concepts unless needed.",
+        "success_criteria": [
+          "Provides a precise answer",
+          "Uses correct chemistry terminology",
+          "Remains grounded in course materials",
+          "Matches the student's more advanced framing"
+        ]
+      },
+      "contextualized_queries": [
+        {
+          "query_id": "Q1",
+          "query": "Define molar mass and distinguish it from molecular mass."
+        }
+      ],
+      "notes": "Contextualized happy path with higher student expertise."
+    }
+  ]
+}

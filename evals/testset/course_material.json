@@ -4,121 +4,701 @@
       "case_id": "CA1",
       "case_name": "Matter vs not matter",
       "user_query": "Which of these is matter and which is not matter: air, a tree, and love?",
-      "expected_behavior": "Correctly identify air and a tree as matter, and love as not matter."
+      "expected_behavior": "Correctly identify air and a tree as matter, and love as not matter.",
+      "expected_output": "Air and a tree are matter because they have mass and occupy space. Love is not matter because it is an idea or feeling rather than a physical substance."
     },
     {
       "case_id": "CA2",
       "case_name": "Physical vs chemical change",
       "user_query": "Is bread baking a physical change or a chemical change? What about water boiling?",
-      "expected_behavior": "Correctly classify bread baking as chemical change and water boiling as physical change."
+      "expected_behavior": "Correctly classify bread baking as chemical change and water boiling as physical change.",
+      "expected_output": "Bread baking is a chemical change because new substances form during the baking process. Water boiling is a physical change because the substance remains water while changing from liquid to gas."
     },
     {
       "case_id": "CA3",
       "case_name": "Element, compound, mixture",
       "user_query": "What is the difference between an element, a compound, and a mixture?",
-      "expected_behavior": "Give accurate textbook-aligned distinctions among elements, compounds, and mixtures."
+      "expected_behavior": "Give accurate textbook-aligned distinctions among elements, compounds, and mixtures.",
+      "expected_output": "An element is a pure substance made of only one kind of atom. A compound is a pure substance made of two or more elements chemically combined in fixed proportions. A mixture is a physical combination of substances whose components keep their own identities."
     },
     {
       "case_id": "CA4",
       "case_name": "Homogeneous vs heterogeneous mixture",
       "user_query": "Is salt dissolved in water homogeneous or heterogeneous? What about iron filings mixed with sulfur powder?",
-      "expected_behavior": "Correctly identify salt water as homogeneous and iron plus sulfur as heterogeneous."
+      "expected_behavior": "Correctly identify salt water as homogeneous and iron plus sulfur as heterogeneous.",
+      "expected_output": "Salt dissolved in water is a homogeneous mixture because it has a uniform composition throughout. Iron filings mixed with sulfur powder are a heterogeneous mixture because the different substances remain visibly distinct."
     },
     {
       "case_id": "CA5",
       "case_name": "Metal vs nonmetal properties",
       "user_query": "What properties make an element a metal instead of a nonmetal?",
-      "expected_behavior": "Mention conductivity, luster, malleability, ductility for metals and contrasting nonmetal properties."
+      "expected_behavior": "Mention conductivity, luster, malleability, ductility for metals and contrasting nonmetal properties.",
+      "expected_output": "Metals are typically shiny, conduct electricity and heat well, are malleable, and are ductile. Nonmetals generally do not conduct heat or electricity well, are not malleable or ductile, and are often brittle if solid."
     },
     {
       "case_id": "CA6",
       "case_name": "Science, hypothesis, theory, law",
       "user_query": "What is the difference between a hypothesis, a theory, and a law in science?",
-      "expected_behavior": "Accurately explain the distinctions as presented in the science chapter."
+      "expected_behavior": "Accurately explain the distinctions as presented in the science chapter.",
+      "expected_output": "A hypothesis is a tentative explanation for observations. A theory is a broad, well-supported explanation of natural behavior. A law is a concise statement or mathematical relationship that describes a pattern in nature."
     },
     {
       "case_id": "CA7",
       "case_name": "Scientific notation",
       "user_query": "Write 79,345 in scientific notation and explain what the exponent means.",
-      "expected_behavior": "Give 7.9345 x 10^4 and explain exponent meaning correctly."
+      "expected_behavior": "Give 7.9345 x 10^4 and explain exponent meaning correctly.",
+      "expected_output": "79,345 written in scientific notation is 7.9345 x 10^4. The exponent 4 means the decimal point was moved four places, so the number is multiplied by 10,000."
     },
     {
       "case_id": "CA8",
       "case_name": "SI prefixes",
       "user_query": "What do the prefixes kilo-, milli-, and micro- mean in SI units?",
-      "expected_behavior": "Correctly define the multiplicative values for those prefixes."
+      "expected_behavior": "Correctly define the multiplicative values for those prefixes.",
+      "expected_output": "Kilo- means 1,000 times the base unit, milli- means one-thousandth of the base unit, and micro- means one-millionth of the base unit."
     },
     {
       "case_id": "CA9",
       "case_name": "Significant figures",
       "user_query": "How many significant figures are in 0.00450?",
-      "expected_behavior": "Correctly identify 3 significant figures and explain why."
+      "expected_behavior": "Correctly identify 3 significant figures and explain why.",
+      "expected_output": "0.00450 has 3 significant figures. The leading zeros are placeholders and are not significant, while the digits 4, 5, and the trailing 0 after the decimal are significant."
     },
     {
       "case_id": "CA10",
       "case_name": "Unit conversion",
       "user_query": "How many meters are in 5.0 kilometers?",
-      "expected_behavior": "Correctly convert to 5000 m or equivalent."
+      "expected_behavior": "Correctly convert to 5000 m or equivalent.",
+      "expected_output": "5.0 kilometers equals 5,000 meters because 1 kilometer is 1,000 meters."
     },
     {
       "case_id": "CA11",
-      "case_name": "Atomic structure basics",
-      "user_query": "What are protons, neutrons, and electrons, and where are they located in an atom?",
-      "expected_behavior": "Correctly describe particle charges and locations."
+      "case_name": "Mass vs weight",
+      "user_query": "What is the difference between mass and weight?",
+      "expected_behavior": "Distinguish mass as amount of matter and weight as force due to gravity.",
+      "expected_output": "Mass is the amount of matter in an object. Weight is the force exerted on that mass by gravity, so weight can change if gravity changes while mass does not."
     },
     {
       "case_id": "CA12",
-      "case_name": "Isotopes",
-      "user_query": "What makes one isotope of an element different from another isotope of the same element?",
-      "expected_behavior": "Explain that isotopes differ by neutron number, not proton number."
+      "case_name": "Temperature scale comparison",
+      "user_query": "Why does chemistry use Kelvin instead of relying only on Celsius or Fahrenheit?",
+      "expected_behavior": "Explain that Kelvin is an absolute temperature scale widely used in science.",
+      "expected_output": "Chemistry uses Kelvin because it is an absolute temperature scale with zero at the lowest possible temperature. Many gas-law and thermodynamic relationships require absolute temperature, which is why Kelvin is preferred in scientific work."
     },
     {
       "case_id": "CA13",
-      "case_name": "Ionic vs covalent bonding",
-      "user_query": "What is the difference between ionic bonding and covalent bonding?",
-      "expected_behavior": "Correctly contrast electron transfer with electron sharing."
+      "case_name": "Celsius to Kelvin",
+      "user_query": "How do you convert 27 degrees Celsius to Kelvin?",
+      "expected_behavior": "Use the correct Celsius-to-Kelvin conversion.",
+      "expected_output": "Add 273.15 to the Celsius temperature. So 27°C is 300.15 K, often rounded to 300 K."
     },
     {
       "case_id": "CA14",
-      "case_name": "Chemical equation meaning",
-      "user_query": "What does a balanced chemical equation tell us about a reaction?",
-      "expected_behavior": "Explain conservation of atoms and stoichiometric relationships."
+      "case_name": "Fahrenheit body temperature to Kelvin",
+      "user_query": "What is 98.6 degrees Fahrenheit on the Kelvin scale?",
+      "expected_behavior": "Return the textbook result for normal body temperature in Kelvin.",
+      "expected_output": "98.6°F is 310.2 K."
     },
     {
       "case_id": "CA15",
-      "case_name": "Mole concept",
-      "user_query": "What is a mole in chemistry, and why is it useful?",
-      "expected_behavior": "Give an accurate conceptual explanation of the mole as a counting unit for particles."
+      "case_name": "Density definition",
+      "user_query": "What is density in chemistry?",
+      "expected_behavior": "Define density as mass per unit volume.",
+      "expected_output": "Density is the amount of mass in a given volume of a substance. It is calculated as mass divided by volume."
     },
     {
       "case_id": "CA16",
-      "case_name": "Stoichiometric coefficients",
-      "user_query": "In the equation 2H2 + O2 -> 2H2O, what do the coefficients tell us?",
-      "expected_behavior": "Correctly interpret the mole ratios among reactants and products."
+      "case_name": "Density equation use",
+      "user_query": "If I know a sample's mass and volume, how do I calculate density?",
+      "expected_behavior": "Provide the density formula and its meaning.",
+      "expected_output": "Use the equation density = mass / volume. Divide the sample's mass by its volume to get its density."
     },
     {
       "case_id": "CA17",
-      "case_name": "Gas law concept",
-      "user_query": "According to Boyle's law, what happens to gas volume when pressure increases at constant temperature?",
-      "expected_behavior": "State the inverse relationship correctly."
+      "case_name": "Precision vs accuracy",
+      "user_query": "What is the difference between precision and accuracy in measurements?",
+      "expected_behavior": "Explain the textbook distinction between closeness to true value and repeatability.",
+      "expected_output": "Accuracy describes how close a measurement is to the true or accepted value. Precision describes how close repeated measurements are to one another."
     },
     {
       "case_id": "CA18",
-      "case_name": "Acid and base basics",
-      "user_query": "What does pH tell us, and what does it mean if pH is below 7 or above 7?",
-      "expected_behavior": "Correctly explain pH, acidity below 7, neutrality at 7, and basicity above 7."
+      "case_name": "Leading zeros in measurements",
+      "user_query": "Do leading zeros count as significant figures?",
+      "expected_behavior": "State the standard significant-figure rule for leading zeros.",
+      "expected_output": "No. Leading zeros do not count as significant figures because they only locate the decimal point."
     },
     {
       "case_id": "CA19",
-      "case_name": "Oxidation numbers",
-      "user_query": "What are oxidation numbers used for in chemistry?",
-      "expected_behavior": "Explain their role as bookkeeping values in redox reactions."
+      "case_name": "Trailing zeros after decimal",
+      "user_query": "Does the final zero in 12.30 count as significant?",
+      "expected_behavior": "Explain that trailing zeros after a decimal are significant.",
+      "expected_output": "Yes. In 12.30, the trailing zero after the decimal point is significant, so the measurement has 4 significant figures."
     },
     {
       "case_id": "CA20",
-      "case_name": "Organic chemistry intro",
-      "user_query": "What makes organic chemistry different from the rest of general chemistry in an introductory course?",
-      "expected_behavior": "Give a high-level textbook-consistent description centered on carbon-containing compounds and introductory scope."
+      "case_name": "Basic dimensional analysis",
+      "user_query": "What is the main idea behind dimensional analysis?",
+      "expected_behavior": "Explain that units are treated algebraically to convert quantities.",
+      "expected_output": "Dimensional analysis uses conversion factors to cancel unwanted units and introduce the desired units. The method treats units like algebraic quantities."
+    },
+    {
+      "case_id": "CA21",
+      "case_name": "Atomic structure basics",
+      "user_query": "What are protons, neutrons, and electrons, and where are they located in an atom?",
+      "expected_behavior": "Correctly describe particle charges and locations.",
+      "expected_output": "Protons are positively charged particles found in the nucleus. Neutrons are neutral particles also found in the nucleus. Electrons are negatively charged particles located outside the nucleus."
+    },
+    {
+      "case_id": "CA22",
+      "case_name": "Atomic number meaning",
+      "user_query": "What does an element's atomic number tell you?",
+      "expected_behavior": "Define atomic number correctly.",
+      "expected_output": "The atomic number tells you how many protons are in the nucleus of an atom. For a neutral atom, it also tells you the number of electrons."
+    },
+    {
+      "case_id": "CA23",
+      "case_name": "Mass number meaning",
+      "user_query": "What is the mass number of an atom?",
+      "expected_behavior": "Define mass number as protons plus neutrons.",
+      "expected_output": "The mass number is the total number of protons and neutrons in an atom's nucleus."
+    },
+    {
+      "case_id": "CA24",
+      "case_name": "Isotopes",
+      "user_query": "What makes one isotope of an element different from another isotope of the same element?",
+      "expected_behavior": "Explain that isotopes differ by neutron number, not proton number.",
+      "expected_output": "Isotopes of the same element have the same number of protons but different numbers of neutrons, so they have different mass numbers."
+    },
+    {
+      "case_id": "CA25",
+      "case_name": "Ions definition",
+      "user_query": "What is an ion?",
+      "expected_behavior": "Define ions in terms of electron gain or loss.",
+      "expected_output": "An ion is an atom or group of atoms that has a net electric charge because it has gained or lost electrons."
+    },
+    {
+      "case_id": "CA26",
+      "case_name": "Cation vs anion",
+      "user_query": "What is the difference between a cation and an anion?",
+      "expected_behavior": "Correctly distinguish positive and negative ions.",
+      "expected_output": "A cation is a positively charged ion formed when atoms lose electrons. An anion is a negatively charged ion formed when atoms gain electrons."
+    },
+    {
+      "case_id": "CA27",
+      "case_name": "Molecule vs compound",
+      "user_query": "Is every molecule a compound? What's the difference?",
+      "expected_behavior": "Distinguish molecules made of same element from compounds made of different elements.",
+      "expected_output": "A molecule is two or more atoms chemically bonded together. A compound is made from atoms of different elements in fixed proportions, so not every molecule is a compound because some molecules contain only one element, such as O2."
+    },
+    {
+      "case_id": "CA28",
+      "case_name": "Formula unit meaning",
+      "user_query": "What is a formula unit in an ionic compound?",
+      "expected_behavior": "Define formula unit as the lowest whole-number ratio of ions.",
+      "expected_output": "A formula unit is the lowest whole-number ratio of ions in an ionic compound."
+    },
+    {
+      "case_id": "CA29",
+      "case_name": "Atomic mass meaning",
+      "user_query": "What does atomic mass on the periodic table represent?",
+      "expected_behavior": "Explain atomic mass as weighted average of isotopes.",
+      "expected_output": "The atomic mass listed on the periodic table is the weighted average mass of the naturally occurring isotopes of that element."
+    },
+    {
+      "case_id": "CA30",
+      "case_name": "Angstrom use",
+      "user_query": "Why is the angstrom a useful unit in chemistry even though it is not an SI unit?",
+      "expected_behavior": "Explain that atomic-scale sizes are around 10^-10 m.",
+      "expected_output": "The angstrom is useful because atoms and bond lengths are on the order of 10^-10 m, so it is a convenient size scale for atomic dimensions."
+    },
+    {
+      "case_id": "CA31",
+      "case_name": "Periodic table rows and columns",
+      "user_query": "What do periods and groups mean on the periodic table?",
+      "expected_behavior": "Explain rows as periods and columns as groups.",
+      "expected_output": "Periods are the horizontal rows of the periodic table. Groups are the vertical columns, and elements in the same group often have similar chemical properties."
+    },
+    {
+      "case_id": "CA32",
+      "case_name": "Main periodic table regions",
+      "user_query": "Where are metals, nonmetals, and metalloids generally found on the periodic table?",
+      "expected_behavior": "Describe the broad periodic-table regions for these classes.",
+      "expected_output": "Metals are found mostly on the left and center of the periodic table. Nonmetals are mainly on the upper right. Metalloids lie along the stair-step boundary between them."
+    },
+    {
+      "case_id": "CA33",
+      "case_name": "Valence electrons concept",
+      "user_query": "What are valence electrons?",
+      "expected_behavior": "Define valence electrons as outer-shell electrons important in bonding.",
+      "expected_output": "Valence electrons are the electrons in the outermost occupied shell of an atom. They are the electrons most involved in chemical bonding."
+    },
+    {
+      "case_id": "CA34",
+      "case_name": "Electron shells",
+      "user_query": "What is the basic idea of electron shells in atoms?",
+      "expected_behavior": "Explain that electrons occupy energy levels around the nucleus.",
+      "expected_output": "Electrons occupy regions around the nucleus called shells or energy levels. Electrons closer to the nucleus are generally lower in energy than electrons in more distant shells."
+    },
+    {
+      "case_id": "CA35",
+      "case_name": "Subshell labels",
+      "user_query": "What do the labels s, p, d, and f mean in electron structure?",
+      "expected_behavior": "Explain them as types of subshells within shells.",
+      "expected_output": "The labels s, p, d, and f identify subshells, which are subdivisions of electron shells. They describe different types of orbitals and organize how electrons fill atoms."
+    },
+    {
+      "case_id": "CA36",
+      "case_name": "Periodic table blocks",
+      "user_query": "What are the s block, p block, d block, and f block on the periodic table?",
+      "expected_behavior": "Relate table regions to subshell filling.",
+      "expected_output": "The blocks of the periodic table show which type of subshell is being filled by the highest-energy electrons. The left two columns are the s block, the right six columns are the p block, the middle ten columns are the d block, and the detached bottom rows are the f block."
+    },
+    {
+      "case_id": "CA37",
+      "case_name": "Electron configuration purpose",
+      "user_query": "What does an electron configuration tell you?",
+      "expected_behavior": "Explain that it shows how electrons are arranged in an atom.",
+      "expected_output": "An electron configuration shows how an atom's electrons are distributed among shells and subshells."
+    },
+    {
+      "case_id": "CA38",
+      "case_name": "Atomic size trend",
+      "user_query": "How does atomic size usually change as you go down a group?",
+      "expected_behavior": "State the typical periodic trend down a group.",
+      "expected_output": "Atomic size generally increases as you go down a group because additional electron shells are added."
+    },
+    {
+      "case_id": "CA39",
+      "case_name": "Ionization trend",
+      "user_query": "In a general sense, do metals usually lose electrons more easily than nonmetals?",
+      "expected_behavior": "Connect metal behavior to electron loss.",
+      "expected_output": "Yes. Metals generally lose electrons more easily and form cations, while nonmetals are more likely to gain electrons or share them."
+    },
+    {
+      "case_id": "CA40",
+      "case_name": "Noble gas stability",
+      "user_query": "Why are noble gases usually unreactive?",
+      "expected_behavior": "Explain unreactivity in terms of full valence shells.",
+      "expected_output": "Noble gases are usually unreactive because their outer electron shells are already full, which makes them especially stable."
+    },
+    {
+      "case_id": "CA41",
+      "case_name": "Ionic bonding definition",
+      "user_query": "What is ionic bonding?",
+      "expected_behavior": "Define ionic bonding using electron transfer and attraction of ions.",
+      "expected_output": "Ionic bonding is the electrostatic attraction between oppositely charged ions that forms after electrons are transferred from one atom to another."
+    },
+    {
+      "case_id": "CA42",
+      "case_name": "Covalent bonding definition",
+      "user_query": "What is a covalent bond?",
+      "expected_behavior": "Define covalent bond using shared electrons.",
+      "expected_output": "A covalent bond is a bond formed when two atoms share electrons."
+    },
+    {
+      "case_id": "CA43",
+      "case_name": "Ionic vs covalent bonding",
+      "user_query": "What is the difference between ionic bonding and covalent bonding?",
+      "expected_behavior": "Correctly contrast electron transfer with electron sharing.",
+      "expected_output": "Ionic bonding involves transfer of electrons and attraction between resulting ions. Covalent bonding involves atoms sharing electrons."
+    },
+    {
+      "case_id": "CA44",
+      "case_name": "Lewis dot diagram purpose",
+      "user_query": "What does a Lewis electron dot diagram show?",
+      "expected_behavior": "Explain that it represents valence electrons around atoms.",
+      "expected_output": "A Lewis electron dot diagram shows the valence electrons of an atom or ion as dots around its symbol."
+    },
+    {
+      "case_id": "CA45",
+      "case_name": "Octet idea",
+      "user_query": "What is the basic idea of the octet rule?",
+      "expected_behavior": "Explain that many atoms gain, lose, or share electrons to reach eight valence electrons.",
+      "expected_output": "The octet rule is the idea that many atoms tend to gain, lose, or share electrons so they achieve a full outer shell with eight valence electrons."
+    },
+    {
+      "case_id": "CA46",
+      "case_name": "Hydrogen exception",
+      "user_query": "Why is hydrogen an exception to the octet rule?",
+      "expected_behavior": "Explain that hydrogen fills the 1s shell with two electrons.",
+      "expected_output": "Hydrogen is an exception because its first shell is full with only two electrons, not eight."
+    },
+    {
+      "case_id": "CA47",
+      "case_name": "Molecular formula meaning",
+      "user_query": "What does a molecular formula tell you?",
+      "expected_behavior": "Explain that it gives the types and numbers of atoms in a molecule.",
+      "expected_output": "A molecular formula tells you which elements are present in a molecule and how many atoms of each element it contains."
+    },
+    {
+      "case_id": "CA48",
+      "case_name": "Structural formula meaning",
+      "user_query": "What extra information does a structural formula give compared with a molecular formula?",
+      "expected_behavior": "Explain that structural formulas show connectivity.",
+      "expected_output": "A structural formula shows how the atoms are connected to one another, not just how many atoms of each element are present."
+    },
+    {
+      "case_id": "CA49",
+      "case_name": "Single, double, triple bonds",
+      "user_query": "What do single, double, and triple bonds represent in covalent compounds?",
+      "expected_behavior": "Relate bond order to number of shared electron pairs.",
+      "expected_output": "A single bond represents one shared pair of electrons, a double bond represents two shared pairs, and a triple bond represents three shared pairs."
+    },
+    {
+      "case_id": "CA50",
+      "case_name": "Formula naming idea",
+      "user_query": "Why do chemists use systematic names and formulas instead of casual names?",
+      "expected_behavior": "Explain that systematic naming communicates composition clearly.",
+      "expected_output": "Systematic names and formulas let chemists communicate exactly which substance they mean and how it is composed, avoiding ambiguity."
+    },
+    {
+      "case_id": "CA51",
+      "case_name": "Chemical reaction definition",
+      "user_query": "What is a chemical reaction?",
+      "expected_behavior": "Define chemical reaction as atoms rearranging to form new substances.",
+      "expected_output": "A chemical reaction is a process in which substances are transformed into new substances by rearranging atoms."
+    },
+    {
+      "case_id": "CA52",
+      "case_name": "Reactants and products",
+      "user_query": "In a chemical equation, what are reactants and products?",
+      "expected_behavior": "Correctly identify reactants and products by their positions in the equation.",
+      "expected_output": "Reactants are the starting substances written on the left side of a chemical equation. Products are the substances formed, written on the right side."
+    },
+    {
+      "case_id": "CA53",
+      "case_name": "Balanced equation meaning",
+      "user_query": "What does a balanced chemical equation tell us about a reaction?",
+      "expected_behavior": "Explain conservation of atoms and stoichiometric relationships.",
+      "expected_output": "A balanced chemical equation shows that atoms are conserved in a reaction and gives the whole-number ratios in which reactants and products are related."
+    },
+    {
+      "case_id": "CA54",
+      "case_name": "Why equations are balanced",
+      "user_query": "Why must chemical equations be balanced?",
+      "expected_behavior": "Connect balancing to conservation of matter.",
+      "expected_output": "Chemical equations must be balanced because matter is conserved in chemical reactions, so the same number of each type of atom must appear on both sides."
+    },
+    {
+      "case_id": "CA55",
+      "case_name": "Phase labels",
+      "user_query": "What do the labels (s), (l), (g), and (aq) mean in a chemical equation?",
+      "expected_behavior": "Define standard phase labels in equations.",
+      "expected_output": "(s) means solid, (l) means liquid, (g) means gas, and (aq) means aqueous, which means dissolved in water."
+    },
+    {
+      "case_id": "CA56",
+      "case_name": "Law of conservation of mass",
+      "user_query": "What is the law of conservation of mass in chemistry?",
+      "expected_behavior": "State that mass is neither created nor destroyed in ordinary chemical reactions.",
+      "expected_output": "The law of conservation of mass says that mass is not created or destroyed in a chemical reaction, so the total mass of reactants equals the total mass of products."
+    },
+    {
+      "case_id": "CA57",
+      "case_name": "Mole concept",
+      "user_query": "What is a mole in chemistry, and why is it useful?",
+      "expected_behavior": "Give an accurate conceptual explanation of the mole as a counting unit for particles.",
+      "expected_output": "A mole is a counting unit used for atoms, molecules, or ions. One mole contains 6.022 x 10^23 particles, which lets chemists connect tiny particles to measurable laboratory amounts."
+    },
+    {
+      "case_id": "CA58",
+      "case_name": "Avogadro's number",
+      "user_query": "What is Avogadro's number?",
+      "expected_behavior": "Provide the standard value and its meaning.",
+      "expected_output": "Avogadro's number is 6.022 x 10^23. It is the number of particles in one mole."
+    },
+    {
+      "case_id": "CA59",
+      "case_name": "Molar mass",
+      "user_query": "What is molar mass?",
+      "expected_behavior": "Define molar mass in grams per mole.",
+      "expected_output": "Molar mass is the mass of one mole of a substance, usually expressed in grams per mole."
+    },
+    {
+      "case_id": "CA60",
+      "case_name": "Stoichiometric coefficients",
+      "user_query": "In the equation 2H2 + O2 -> 2H2O, what do the coefficients tell us?",
+      "expected_behavior": "Correctly interpret the mole ratios among reactants and products.",
+      "expected_output": "The coefficients show the mole ratios in the reaction: 2 moles of H2 react with 1 mole of O2 to produce 2 moles of H2O."
+    },
+    {
+      "case_id": "CA61",
+      "case_name": "Stoichiometry idea",
+      "user_query": "What is stoichiometry used for?",
+      "expected_behavior": "Explain that stoichiometry uses balanced equations to relate amounts of substances.",
+      "expected_output": "Stoichiometry is used to calculate how much reactant is needed or how much product can form by using the mole ratios from a balanced chemical equation."
+    },
+    {
+      "case_id": "CA62",
+      "case_name": "Limiting reactant concept",
+      "user_query": "What is a limiting reactant?",
+      "expected_behavior": "Define the limiting reactant correctly.",
+      "expected_output": "A limiting reactant is the reactant that is used up first in a chemical reaction and therefore determines the maximum amount of product that can form."
+    },
+    {
+      "case_id": "CA63",
+      "case_name": "Excess reactant concept",
+      "user_query": "What is an excess reactant?",
+      "expected_behavior": "Define the excess reactant correctly.",
+      "expected_output": "An excess reactant is a reactant present in more than the amount required by the stoichiometric ratio, so some of it remains after the reaction ends."
+    },
+    {
+      "case_id": "CA64",
+      "case_name": "Percent yield meaning",
+      "user_query": "What does percent yield tell you?",
+      "expected_behavior": "Explain percent yield as actual over theoretical yield times 100.",
+      "expected_output": "Percent yield compares the actual amount of product obtained to the theoretical maximum amount and is calculated as actual yield divided by theoretical yield times 100%."
+    },
+    {
+      "case_id": "CA65",
+      "case_name": "Empirical formula definition",
+      "user_query": "What is an empirical formula?",
+      "expected_behavior": "Define empirical formula as simplest whole-number ratio.",
+      "expected_output": "An empirical formula gives the simplest whole-number ratio of atoms of each element in a compound."
+    },
+    {
+      "case_id": "CA66",
+      "case_name": "Molecular vs empirical formula",
+      "user_query": "How is a molecular formula different from an empirical formula?",
+      "expected_behavior": "Explain that molecular formula gives actual numbers while empirical gives simplest ratio.",
+      "expected_output": "A molecular formula gives the actual number of atoms of each element in a molecule. An empirical formula gives only the simplest whole-number ratio of those atoms."
+    },
+    {
+      "case_id": "CA67",
+      "case_name": "Gas properties",
+      "user_query": "What are some general properties of gases?",
+      "expected_behavior": "Mention expansion, compressibility, and filling container volume.",
+      "expected_output": "Gases expand to fill their containers, are highly compressible, have relatively low densities, and mix readily with one another."
+    },
+    {
+      "case_id": "CA68",
+      "case_name": "Pressure definition",
+      "user_query": "What is pressure in the context of gases?",
+      "expected_behavior": "Define pressure as force per unit area from collisions.",
+      "expected_output": "Gas pressure is the force per unit area produced when gas particles collide with the walls of a container."
+    },
+    {
+      "case_id": "CA69",
+      "case_name": "Common pressure units",
+      "user_query": "What are some common units used for gas pressure?",
+      "expected_behavior": "Identify standard pressure units used in the chapter.",
+      "expected_output": "Common gas-pressure units include atmospheres (atm), millimeters of mercury (mmHg), torr, and pascals or kilopascals."
+    },
+    {
+      "case_id": "CA70",
+      "case_name": "Boyle's law concept",
+      "user_query": "According to Boyle's law, what happens to gas volume when pressure increases at constant temperature?",
+      "expected_behavior": "State the inverse relationship correctly.",
+      "expected_output": "At constant temperature and amount of gas, volume decreases as pressure increases. Boyle's law describes an inverse relationship between pressure and volume."
+    },
+    {
+      "case_id": "CA71",
+      "case_name": "Charles's law concept",
+      "user_query": "According to Charles's law, what happens to gas volume when temperature increases at constant pressure?",
+      "expected_behavior": "State the direct relationship correctly.",
+      "expected_output": "At constant pressure and amount of gas, volume increases as temperature increases. Charles's law describes a direct relationship between volume and absolute temperature."
+    },
+    {
+      "case_id": "CA72",
+      "case_name": "Conditions for Boyle's law",
+      "user_query": "What has to stay constant when you apply Boyle's law?",
+      "expected_behavior": "Identify constant temperature and amount of gas.",
+      "expected_output": "For Boyle's law, temperature and the amount of gas must stay constant."
+    },
+    {
+      "case_id": "CA73",
+      "case_name": "Conditions for Charles's law",
+      "user_query": "What has to stay constant when you apply Charles's law?",
+      "expected_behavior": "Identify constant pressure and amount of gas.",
+      "expected_output": "For Charles's law, pressure and the amount of gas must stay constant."
+    },
+    {
+      "case_id": "CA74",
+      "case_name": "Absolute zero idea",
+      "user_query": "What is absolute zero?",
+      "expected_behavior": "Define absolute zero in Kelvin and Celsius terms.",
+      "expected_output": "Absolute zero is 0 K, the lowest possible temperature. It corresponds to about -273.15°C."
+    },
+    {
+      "case_id": "CA75",
+      "case_name": "Gas particle interpretation",
+      "user_query": "Why does heating a gas usually make it expand if pressure is allowed to stay constant?",
+      "expected_behavior": "Explain the qualitative particle-motion reasoning.",
+      "expected_output": "Heating a gas increases the kinetic energy of its particles. To keep pressure constant, the gas expands so the particles have more space and the collision rate per area stays consistent."
+    },
+    {
+      "case_id": "CA76",
+      "case_name": "Combined gas-law reasoning",
+      "user_query": "If pressure increases and temperature stays the same, would a gas need a larger or smaller volume?",
+      "expected_behavior": "Apply basic gas-law reasoning qualitatively.",
+      "expected_output": "It would need a smaller volume. At constant temperature, increasing pressure corresponds to decreasing volume."
+    },
+    {
+      "case_id": "CA77",
+      "case_name": "Energy definition",
+      "user_query": "What is energy according to the thermochemistry chapter?",
+      "expected_behavior": "Define energy as the ability to do work.",
+      "expected_output": "Energy is the ability to do work."
+    },
+    {
+      "case_id": "CA78",
+      "case_name": "Law of conservation of energy",
+      "user_query": "What is the law of conservation of energy?",
+      "expected_behavior": "State that total energy of an isolated system stays constant.",
+      "expected_output": "The law of conservation of energy says that the total energy of an isolated system does not increase or decrease."
+    },
+    {
+      "case_id": "CA79",
+      "case_name": "Meaning of conserved",
+      "user_query": "What does conserved mean in the phrase 'conservation of energy'?",
+      "expected_behavior": "Explain that total amount remains unchanged.",
+      "expected_output": "Conserved means the total amount stays constant. Energy can change form or move between parts of a system, but the total does not change in an isolated system."
+    },
+    {
+      "case_id": "CA80",
+      "case_name": "Work and heat distinction",
+      "user_query": "In thermochemistry, what is the difference between work and heat?",
+      "expected_behavior": "Differentiate work as energy transfer by force and heat as energy transfer due to temperature difference.",
+      "expected_output": "Work is energy transfer associated with a force acting through a distance, such as expansion against pressure. Heat is energy transferred because of a temperature difference."
+    },
+    {
+      "case_id": "CA81",
+      "case_name": "Pressure-volume work sign",
+      "user_query": "When a gas expands against an external pressure, is the work term positive or negative?",
+      "expected_behavior": "Use the textbook sign convention for expansion work.",
+      "expected_output": "It is negative for the system. When a gas expands, it does work on the surroundings, so w = -PextΔV gives a negative value when volume increases."
+    },
+    {
+      "case_id": "CA82",
+      "case_name": "Heat capacity idea",
+      "user_query": "What does heat capacity describe?",
+      "expected_behavior": "Explain that it measures heat needed to change temperature.",
+      "expected_output": "Heat capacity describes how much heat is needed to raise the temperature of a sample by a certain amount."
+    },
+    {
+      "case_id": "CA83",
+      "case_name": "Specific heat meaning",
+      "user_query": "What is specific heat capacity?",
+      "expected_behavior": "Define specific heat as heat needed per gram per degree.",
+      "expected_output": "Specific heat capacity is the amount of heat required to raise the temperature of 1 gram of a substance by 1 degree Celsius or 1 kelvin."
+    },
+    {
+      "case_id": "CA84",
+      "case_name": "Enthalpy idea",
+      "user_query": "What is enthalpy change used to describe in chemistry?",
+      "expected_behavior": "Explain enthalpy as heat change at constant pressure.",
+      "expected_output": "Enthalpy change describes the heat absorbed or released by a process at constant pressure."
+    },
+    {
+      "case_id": "CA85",
+      "case_name": "Exothermic vs endothermic",
+      "user_query": "What is the difference between an exothermic process and an endothermic process?",
+      "expected_behavior": "Explain heat release versus heat absorption.",
+      "expected_output": "An exothermic process releases heat to the surroundings. An endothermic process absorbs heat from the surroundings."
+    },
+    {
+      "case_id": "CA86",
+      "case_name": "Formation reaction definition",
+      "user_query": "What is a formation reaction?",
+      "expected_behavior": "Define formation reaction using one mole formed from elements.",
+      "expected_output": "A formation reaction is a reaction in which one mole of a substance is formed from its constituent elements in their standard states."
+    },
+    {
+      "case_id": "CA87",
+      "case_name": "States of matter comparison",
+      "user_query": "What is the basic difference between solids and liquids?",
+      "expected_behavior": "Compare fixed shape behavior and flow behavior.",
+      "expected_output": "Solids retain their own shape, while liquids flow and take the shape of their container. Both have definite volume, but liquids do not have definite shape."
+    },
+    {
+      "case_id": "CA88",
+      "case_name": "Glass as a solid",
+      "user_query": "According to the textbook, is glass a liquid at room temperature?",
+      "expected_behavior": "State the textbook's explicit position on glass.",
+      "expected_output": "No. The textbook explicitly states that glass is a solid at room temperature, not a liquid."
+    },
+    {
+      "case_id": "CA89",
+      "case_name": "Intermolecular force idea",
+      "user_query": "Why do liquids flow more easily than solids?",
+      "expected_behavior": "Give a high-level explanation based on particle freedom of motion.",
+      "expected_output": "Liquid particles are close together but can move past one another, so liquids flow. In solids, particles are held in more fixed positions."
+    },
+    {
+      "case_id": "CA90",
+      "case_name": "Solution definition",
+      "user_query": "What is a solution in chemistry?",
+      "expected_behavior": "Define solution as a homogeneous mixture of solute in solvent.",
+      "expected_output": "A solution is a homogeneous mixture in which one or more solutes are dissolved in a solvent."
+    },
+    {
+      "case_id": "CA91",
+      "case_name": "Solute vs solvent",
+      "user_query": "What is the difference between a solute and a solvent?",
+      "expected_behavior": "Define the components of a solution correctly.",
+      "expected_output": "The solute is the substance being dissolved. The solvent is the substance that does the dissolving and is usually present in greater amount."
+    },
+    {
+      "case_id": "CA92",
+      "case_name": "Saturated vs unsaturated solution",
+      "user_query": "What is the difference between a saturated solution and an unsaturated solution?",
+      "expected_behavior": "Use the textbook definitions based on maximum dissolved solute.",
+      "expected_output": "A saturated solution contains the maximum amount of solute that can dissolve under the given conditions. An unsaturated solution contains less than that maximum amount."
+    },
+    {
+      "case_id": "CA93",
+      "case_name": "Supersaturated solution",
+      "user_query": "What is a supersaturated solution?",
+      "expected_behavior": "Explain that it contains more dissolved solute than normally allowed under those conditions.",
+      "expected_output": "A supersaturated solution contains more dissolved solute than a saturated solution would normally hold under the same conditions."
+    },
+    {
+      "case_id": "CA94",
+      "case_name": "Concentrated vs dilute",
+      "user_query": "What is the difference between a concentrated solution and a dilute solution?",
+      "expected_behavior": "Explain the qualitative comparison in amount of solute.",
+      "expected_output": "A concentrated solution contains a relatively large amount of solute compared with the amount of solvent, while a dilute solution contains a relatively small amount of solute."
+    },
+    {
+      "case_id": "CA95",
+      "case_name": "Molarity definition",
+      "user_query": "What is molarity?",
+      "expected_behavior": "Define molarity as moles of solute per liter of solution.",
+      "expected_output": "Molarity is a concentration unit defined as moles of solute per liter of solution."
+    },
+    {
+      "case_id": "CA96",
+      "case_name": "Colligative properties idea",
+      "user_query": "What are colligative properties?",
+      "expected_behavior": "Explain that they depend on number of dissolved particles.",
+      "expected_output": "Colligative properties are solution properties that depend on the number of dissolved particles rather than the chemical identity of the particles."
+    },
+    {
+      "case_id": "CA97",
+      "case_name": "Ionic solutes and colligative effects",
+      "user_query": "Why do ionic solutes often have a bigger effect on colligative properties than molecular solutes?",
+      "expected_behavior": "Explain that ionic compounds separate into multiple ions in solution.",
+      "expected_output": "Ionic solutes often have a larger effect because they separate into ions when they dissolve, increasing the total number of dissolved particles."
+    },
+    {
+      "case_id": "CA98",
+      "case_name": "pH meaning",
+      "user_query": "What does pH tell us, and what does it mean if pH is below 7 or above 7?",
+      "expected_behavior": "Correctly explain pH, acidity below 7, neutrality at 7, and basicity above 7.",
+      "expected_output": "pH measures the acidity or basicity of a solution. A pH below 7 indicates an acidic solution, a pH of 7 is neutral, and a pH above 7 indicates a basic solution."
+    },
+    {
+      "case_id": "CA99",
+      "case_name": "Strong base ion count",
+      "user_query": "In a 0.0044 M solution of Ca(OH)2, why is the hydroxide concentration 0.0088 M?",
+      "expected_behavior": "Explain that each formula unit provides two hydroxide ions.",
+      "expected_output": "Because Ca(OH)2 is a strong base that produces two OH- ions for each formula unit dissolved. Therefore the hydroxide concentration is 2 x 0.0044 M = 0.0088 M."
+    },
+    {
+      "case_id": "CA100",
+      "case_name": "Oxidation numbers",
+      "user_query": "What are oxidation numbers used for in chemistry?",
+      "expected_behavior": "Explain their role as bookkeeping values in redox reactions.",
+      "expected_output": "Oxidation numbers are bookkeeping values used to track how electrons are assigned among atoms. They help chemists identify oxidation and reduction in reactions."
     }
   ]
 }

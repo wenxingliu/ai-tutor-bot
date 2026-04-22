@@ -17,6 +17,9 @@ Create a `.env` file in the project root with:
 OPENAI_API_KEY=your_openai_api_key
 OPENAI_TUTOR_MODEL=gpt-5.4-nano
 OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+PHOENIX_ENABLE_TRACING=false
+PHOENIX_PROJECT_NAME=chemistry-course-ai-tutor
+PHOENIX_COLLECTOR_ENDPOINT=
 ```
 
 Then start the app:
@@ -120,4 +123,53 @@ Example response:
     }
   ]
 }
+```
+
+## Phoenix Tracing
+
+To enable Arize Phoenix tracing, add these variables to `.env`:
+
+```bash
+PHOENIX_ENABLE_TRACING=true
+PHOENIX_PROJECT_NAME=chemistry-course-ai-tutor
+PHOENIX_COLLECTOR_ENDPOINT=http://localhost:6006/v1/traces
+```
+
+When enabled, Phoenix captures:
+
+- OpenAI token counts and latency for embeddings and tutor responses
+- retrieval latency for vector search
+- retrieved chunks from the vector database, including filename, page number, score, and chunk text
+
+## Start With Phoenix
+
+To start both the AI tutor app and a local Phoenix server together:
+
+```bash
+./scripts/start_with_phoenix.sh
+```
+
+This starts:
+
+- Phoenix UI on `http://127.0.0.1:6006`
+- Phoenix OTLP collector on `127.0.0.1:4317`
+- AI tutor UI on `http://127.0.0.1:8000`
+
+Local Phoenix data is stored in:
+
+```text
+.phoenix_runtime/
+```
+
+The local Phoenix SQLite database is:
+
+```text
+.phoenix_runtime/phoenix.db
+```
+
+Log files are written to:
+
+```text
+.phoenix.log
+.ai-tutor.log
 ```

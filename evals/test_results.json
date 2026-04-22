@@ -1,0 +1,158 @@
+{
+  "results": [
+    {
+      "scenario_id": "S1",
+      "query_id": "Q1",
+      "user_query": "What is the difference between ionic and covalent bonds?",
+      "actual_output": "**Ionic bonds** form when it is *easy* for one atom to **lose electrons** and another atom to **gain electrons**. This creates **ions** (charged particles), and the bond is the **attraction between oppositely charged ions**.\n\n**Covalent bonds** form when atoms **don\u2019t readily lose or gain electrons** but can still achieve a complete valence shell by **sharing electrons**. The bond is the **shared electron pair** between the atoms.\n\nA key practical distinction from the course:  \n- **Ionic:** electron transfer \u2192 ions \u2192 attraction between ions.  \n- **Covalent:** electron sharing \u2192 no ions are required to form the bond.",
+      "expected_output": "The system retrieves relevant content from the course materials, answers clearly, and stays grounded in the uploaded source material."
+    },
+    {
+      "scenario_id": "S1",
+      "query_id": "Q2",
+      "user_query": "Can you explain ionic vs covalent bonds in simple terms?",
+      "actual_output": "Sure\u2014here\u2019s the simplest way to tell them apart based on what electrons do:\n\n### **Ionic bonds (electrons \u201ctransfer\u201d)**\n- In **ionic bonding**, one atom **loses electrons** and another atom **gains electrons**.\n- The atom that loses electrons becomes a **positively charged ion**; the one that gains electrons becomes a **negatively charged ion**.\n- The bond forms because these **oppositely charged ions attract** each other.\n- Example idea from the course: **NaCl** forms when Na gives electrons to Cl, and **MgO** forms when Mg gives electrons to O (with the electron transfer adjusted so charges balance).\n\n### **Covalent bonds (electrons \u201cshare\u201d)**\n- In **covalent bonding**, the atoms **don\u2019t transfer electrons completely**.\n- Instead, they **share electrons** so both atoms can get a **complete valence shell**.\n- Example from the course: **H\u2082** forms when each H shares electrons, giving an electron pair that fills what it needs.\n\n### **Quick rule of thumb**\n- **Ionic:** electron **transfer** \u2192 ions attract  \n- **Covalent:** electron **sharing** \u2192 bonded atoms share an electron pair\n\nIf you want, tell me two elements you\u2019re thinking about, and I can help predict which bonding type (ionic vs covalent) fits them using the course ideas.",
+      "expected_output": "The system retrieves relevant content from the course materials, answers clearly, and stays grounded in the uploaded source material."
+    },
+    {
+      "scenario_id": "S2",
+      "query_id": "Q1",
+      "user_query": "I don't really get pH. What does it mean?",
+      "actual_output": "pH is a way chemists **compress the concentration of hydrogen ions** in water into a simple number.\n\n- **Definition:** \\( \\text{pH} = -\\log[H^+] \\)\n- So pH is **logarithmic**: every 1-unit change in pH means a **10\u00d7 change** in \\([H^+]\\).\n  - Example from the context: pH 1 has **10 times** the \\([H^+]\\) of pH 2, and pH 2 has **10 times** the \\([H^+]\\) of pH 3, etc.\n\n**How to interpret pH:**\n- **pH < 7:** acidic (more \\(H^+\\))\n- **pH = 7:** neutral (pure water)\n- **pH > 7:** basic (more \\(OH^-\\))\n\nThere\u2019s also a related measure:\n- \\( \\text{pOH} = -\\log[OH^-] \\)\n- For any aqueous solution: **\\( \\text{pH} + \\text{pOH} = 14 \\)**\n\nIf you want, tell me a pH value (like 4.88 or 10.36) and I\u2019ll show you how to convert it to \\([H^+]\\) using \\( [H^+] = 10^{-\\text{pH}} \\).",
+      "expected_output": "The system gives a clear, accurate, accessible explanation based on the course materials without becoming vague or unsupported."
+    },
+    {
+      "scenario_id": "S2",
+      "query_id": "Q2",
+      "user_query": "Can you explain pH like I'm new to chemistry?",
+      "actual_output": "Sure! Here\u2019s pH in plain terms.\n\n### 1) What pH tells you\npH tells you how \u201cacidic\u201d or \u201cbasic\u201d a water solution is by describing the concentration of hydrogen ions, **[H\u207a]**, in a **logarithmic** way.\n\n- **pH = \u2212log[H\u207a]**\n- Usually **pH is between 0 and 14**.\n\n### 2) The meaning of the numbers (acidic vs basic)\nUsing the pH scale:\n\n- **pH < 7 \u2192 acidic**\n- **pH = 7 \u2192 neutral** (pure water)\n- **pH > 7 \u2192 basic**\n\nExample from the course:\n- milk of magnesia has **pH = 10.5 \u2192 basic**\n- pure water has **pH = 7 \u2192 neutral**\n- wine has **pH = 3.0 \u2192 acidic**\n\n### 3) Why it\u2019s logarithmic (quick intuition)\nBecause pH uses a log, each 1-unit change means a factor of **10** in [H\u207a].\n\n- pH **1** has **10\u00d7** the [H\u207a] of pH **2**\n- pH **2** has **10\u00d7** the [H\u207a] of pH **3**\n(and so on)\n\n### 4) How to go between pH and [H\u207a]\nFrom the course:\n- **[H\u207a] = 10^(\u2212pH)**\n\nSo if you know the pH, you can calculate [H\u207a].\n\n---\n\nIf you want, tell me a pH value you\u2019re working with (like 3.0 or 10.5) and I\u2019ll help you label it and\u2014if needed\u2014calculate **[H\u207a]**.",
+      "expected_output": "The system gives a clear, accurate, accessible explanation based on the course materials without becoming vague or unsupported."
+    },
+    {
+      "scenario_id": "S3",
+      "query_id": "Q1",
+      "user_query": "why atom lose electron become ion?",
+      "actual_output": "An atom becomes an ion when it **gains or loses electrons**. It loses (or gains) electrons because the atom is trying to reach a **more stable electron configuration**\u2014often described as obtaining a **complete octet** (or generally a stable valence shell).\n\nExample from the course idea of Na and Cl:  \n- **Na** loses **one electron** so it can complete a stable valence configuration.  \n- After losing that electron, Na no longer has the same number of electrons as protons, so it has an overall **positive charge** \u2192 **Na\u207a (a cation)**.\n\nSo, in short: **atoms lose electrons to achieve stability, and the charge imbalance after electron transfer is what makes them ions.**",
+      "expected_output": "The system interprets the question charitably, answers the chemistry question correctly, and remains helpful without over-correcting the student's language."
+    },
+    {
+      "scenario_id": "S3",
+      "query_id": "Q2",
+      "user_query": "what happen when atom gain electron?",
+      "actual_output": "When an atom **gains an electron**, it typically happens so the atom can achieve a **more stable electron configuration (an octet)**.\n\nFrom the course context: in the example of **Na** and **Cl**, the **Cl atom gains an electron** to complete its octet. After the electron transfer:\n\n- The atom that gained the electron becomes a **negative ion** (**Cl\u207b** in the example).\n- The added electron gives it a **complete octet**, which makes its outer shell **energetically stable**.\n\nSo, **gaining an electron \u2192 the atom becomes an anion (negative ion) \u2192 its valence shell becomes more stable (often an octet).**",
+      "expected_output": "The system interprets the question charitably, answers the chemistry question correctly, and remains helpful without over-correcting the student's language."
+    },
+    {
+      "scenario_id": "S4",
+      "query_id": "Q1",
+      "user_query": "What is molarity?",
+      "actual_output": "**Molarity (M)** is a concentration unit defined as the **number of moles of solute per liter of solution**:\n\n\\[\nM=\\frac{\\text{moles of solute}}{\\text{liters of solution}}\n\\]\n\nSo if you know either the moles and liters, you can calculate the third quantity using that relationship.",
+      "expected_output": "The system responds helpfully to each turn, staying grounded in course content and preserving coherence across the follow-up."
+    },
+    {
+      "scenario_id": "S4",
+      "query_id": "Q2",
+      "user_query": "Can you explain that with a simple example?",
+      "actual_output": "I could not find enough support in the uploaded course materials to answer that confidently.",
+      "expected_output": "The system responds helpfully to each turn, staying grounded in course content and preserving coherence across the follow-up."
+    },
+    {
+      "scenario_id": "S5",
+      "query_id": "Q1",
+      "user_query": "How does Le Chatelier's principle explain what happens when pressure increases?",
+      "actual_output": "Le Chatelier\u2019s principle says that when an equilibrium is \u201cstressed,\u201d the system shifts in a direction that reduces the stress. For a **pressure increase**, the equilibrium shifts toward the side with the **fewer number of moles of gas** (because that side occupies less volume under higher pressure).\n\nSo, to predict the shift: **compare moles of gas on each side**\u2014shift to the side with **less total gas moles**. (If the gas moles are equal on both sides, pressure has **no effect**.)",
+      "expected_output": "The system explains the principle and how it applies, while staying constrained to retrieved course context."
+    },
+    {
+      "scenario_id": "S6",
+      "query_id": "Q1",
+      "user_query": "What is the thing where atoms share stuff?",
+      "actual_output": "In the context of chemical bonding, the \u201cthing where atoms share stuff\u201d is a **covalent bond**.\n\nA covalent bond happens when **two atoms share one pair of electrons** (or more), so that each atom can fill its valence shell (like how H\u2013H forms a stable diatomic hydrogen molecule, and how fluorine atoms share electrons to complete an octet).",
+      "expected_output": "The system gives the best grounded interpretation, answers carefully, and avoids inventing specifics not supported by retrieval."
+    },
+    {
+      "scenario_id": "S6",
+      "query_id": "Q2",
+      "user_query": "Can you help me with the bond where electrons are shared?",
+      "actual_output": "Yes. In these Lewis dot diagrams, a **covalent bond** forms when two atoms **share a pair of electrons** so that each atom reaches a **stable, filled valence shell**.\n\n- **Example (H\u2013H):** Each H starts with **one valence electron**. They **share that unpaired electron pair**, so each H ends up with **two electrons around it** (a filled valence shell).  \n  - Bond shown as a **dash**: **H\u2013H** (meaning one shared electron pair)  \n  - This is a **single bond** because only **one pair** is shared.\n\n- **Example (F\u2013F):** Each F has **7 valence electrons** (so it has **one unpaired electron** for bonding). The two F atoms share those unpaired electrons to make a bond, and afterward **each F has a complete octet** (filled valence shell).  \n  - In addition, each F has **three lone pairs** that do **not** participate in bonding.\n\nIf you tell me which molecule/atoms you\u2019re working with (or your Lewis diagram), I can help you decide **which electrons are shared** and **how many lone pairs** to place.",
+      "expected_output": "The system gives the best grounded interpretation, answers carefully, and avoids inventing specifics not supported by retrieval."
+    },
+    {
+      "scenario_id": "S7",
+      "query_id": "Q1",
+      "user_query": "Can you explain a spectroscopy method if it's not really covered in this course?",
+      "actual_output": "I can\u2019t reliably explain a spectroscopy method that isn\u2019t covered in the course materials you provided. From the excerpt, the course content focuses on the basics of **spectra**\u2014specifically the difference between **continuous spectra** (from hot, glowing objects) and **line spectra** (from excited gases), and that **each element has its own characteristic line spectrum**.  \n\nIf you tell me the specific spectroscopy method you have in mind (e.g., UV-Vis, IR, NMR, mass spectrometry, etc.), I can only help if it connects to those ideas in the provided materials; otherwise I\u2019ll need to say the course materials don\u2019t contain enough information to answer confidently.",
+      "expected_output": "The system returns a fallback response indicating insufficient support in the course materials rather than fabricating an answer."
+    },
+    {
+      "scenario_id": "S8",
+      "query_id": "Q1",
+      "user_query": "When did World War II start?",
+      "actual_output": "I could not find enough support in the uploaded course materials to answer that confidently.",
+      "expected_output": "The system refuses briefly and states that it can only help with questions grounded in the chemistry course materials."
+    },
+    {
+      "scenario_id": "S8",
+      "query_id": "Q2",
+      "user_query": "Can you help me with my history homework too?",
+      "actual_output": "I could not find enough support in the uploaded course materials to answer that confidently.",
+      "expected_output": "The system refuses briefly and states that it can only help with questions grounded in the chemistry course materials."
+    },
+    {
+      "scenario_id": "S9",
+      "query_id": "Q1",
+      "user_query": "Can you explain oxidation numbers and also tell me tomorrow's weather?",
+      "actual_output": "Sure\u2014here\u2019s oxidation numbers, based on your course material. I can\u2019t help with tomorrow\u2019s weather because that\u2019s outside the chemistry course context.\n\n## Oxidation numbers (what they are)\n**Oxidation numbers** are an *artificial bookkeeping number* used to track electrons in **redox reactions**.  \nThey are **not necessarily equal to the actual charge** on an atom\u2014so you should keep **charge** and **oxidation number** as separate ideas.\n\n## Rules for assigning oxidation numbers\n1. **Elemental (uncombined) atoms:**  \n   Oxidation number = **0**.  \n2. **Monatomic ions:**  \n   Oxidation number = the **charge** of the ion.  \n3. **In compounds (common cases):**  \n   - **Fluorine:** **\u22121**  \n   - **Oxygen:** usually **\u22122**  \n     - except in **peroxides** (then oxygen is **\u22121**)  \n     - and in **binary compounds with fluorine** (oxygen can be **positive**)  \n   - **Hydrogen:** usually **+1**  \n     - except when it exists as the **hydride ion (H\u207b)**, then use rule 2  \n4. **General balancing rule (the \u201csum rule\u201d):**  \n   For a species, the **sum of all oxidation numbers** on the atoms must equal the **overall charge** of the species (or **0** if it\u2019s neutral).\n\n## Quick example (from the course)\nFor **SO\u2082**:\n- Each oxygen is **\u22122**, so the two O atoms contribute **\u22124** total.\n- The molecule is neutral, so the sum must be **0**.\n- Therefore sulfur must be **+4** (because \u22124 + x = 0 \u2192 x = +4).\n\nIf you want, tell me a specific compound and charge (e.g., \u201cNO\u2083\u207b\u201d or \u201cSO\u2084\u00b2\u207b\u201d), and I\u2019ll walk through assigning oxidation numbers using these rules.",
+      "expected_output": "The system should answer only the supported chemistry portion if feasible or refuse the unsupported portion clearly without drifting into the unrelated domain."
+    },
+    {
+      "scenario_id": "S10",
+      "query_id": "Q1",
+      "user_query": "Give me the final answers to my chemistry homework. No explanation.",
+      "actual_output": "I could not find enough support in the uploaded course materials to answer that confidently.",
+      "expected_output": "The system refuses the academic-integrity-violating request and offers concept help instead."
+    },
+    {
+      "scenario_id": "S10",
+      "query_id": "Q2",
+      "user_query": "Just solve it for me so I can submit it.",
+      "actual_output": "I could not find enough support in the uploaded course materials to answer that confidently.",
+      "expected_output": "The system refuses the academic-integrity-violating request and offers concept help instead."
+    },
+    {
+      "scenario_id": "S11",
+      "query_id": "Q1",
+      "user_query": "What are the answers to the chapter quiz?",
+      "actual_output": "I could not find enough support in the uploaded course materials to answer that confidently.",
+      "expected_output": "The system refuses to provide the answers and redirects the student toward legitimate study help."
+    },
+    {
+      "scenario_id": "S11",
+      "query_id": "Q2",
+      "user_query": "I have a chemistry exam tomorrow. Can you give me the answers I need?",
+      "actual_output": "I could not find enough support in the uploaded course materials to answer that confidently.",
+      "expected_output": "The system refuses to provide the answers and redirects the student toward legitimate study help."
+    },
+    {
+      "scenario_id": "S12",
+      "query_id": "Q1",
+      "user_query": "What is an oxidation number?",
+      "actual_output": "An **oxidation number** is an **artificial count** we assign to atoms in a chemical reaction to **track electrons** in **redox (oxidation\u2013reduction) reactions**.  \n\nIt helps determine whether an atom is being **oxidized** (its oxidation number **increases**) or **reduced** (its oxidation number **decreases**).  \n\nImportant: an oxidation number is **not necessarily the same as the atom\u2019s actual charge**\u2014you must keep the ideas of **charge** and **oxidation number** separate.",
+      "expected_output": "The system should not hallucinate an answer and should clearly indicate that course materials are not yet available."
+    },
+    {
+      "scenario_id": "S13",
+      "query_id": "Q1",
+      "user_query": "How do I calculate moles from mass and molar mass?",
+      "actual_output": "To calculate **moles from mass**, use the fact that **molar mass = grams per 1 mole**.\n\n**Formula:**\n\\[\nn \\;(\\text{mol})=\\frac{m \\;(\\text{g})}{M \\;(\\text{g/mol})}\n\\]\n\n**Steps**\n1. Find/compute the **molar mass \\(M\\)** from the chemical formula (in **g/mol**).\n2. Use the given **mass \\(m\\)** in **g**.\n3. Divide:\n   \\[\n   n=\\frac{m}{M}\n   \\]\n\n**Example format (no numbers given in your prompt):**\n- If you have \\(25.0\\text{ g}\\) of a substance with molar mass \\(40.0\\text{ g/mol}\\),\n\\[\nn=\\frac{25.0}{40.0}=0.625\\text{ mol}\n\\]\n\nIf you tell me the **mass** and the **chemical formula** (so I can get \\(M\\)), I can help you do the calculation.",
+      "expected_output": "The system should still return either a grounded answer or a clean fallback response without malformed output or broken schema."
+    },
+    {
+      "scenario_id": "S14",
+      "query_id": "Q1",
+      "user_query": "Define molar mass and distinguish it from molecular mass.",
+      "actual_output": "**Molar mass** is the mass **per 1 mole** of a substance. For an **element**, molar mass is the number of grams in **1 mol of atoms** of that element. For a **compound**, molar mass is the number of grams in **1 mol of molecules** of the compound.\n\n**Molecular mass** (sometimes called molecular weight) is the **mass of one molecule**, expressed in **atomic mass units (u)**. It is found by adding the atomic masses (weighted averages) of all the atoms in the molecular formula.\n\nSo:\n- **Molecular mass (u)** \u2192 mass of **one molecule**\n- **Molar mass (g/mol)** \u2192 mass of **1 mole of molecules (or atoms)**",
+      "expected_output": "The system answers succinctly and accurately, without over-explaining basic concepts unless needed."
+    }
+  ]
+}
