@@ -1,11 +1,10 @@
 ---
 name: error-taxonomy-generator
-description: >
-  Generate a root-cause-level error taxonomy for GenAI systems.
+description: Generate a root-cause-level error taxonomy for GenAI systems.
   Use when given a PRD, technical design, and qualitative notes
   to structure failure modes for evaluation design.
 metadata:
-  arguments: "--prd <prd.md> --technical_design <design.md> --notes <notes.md>"
+  arguments: "--prd <docs/prd.md> --technical_design <docs/design.md> --notes <docs/notes.md>"
 ---
 
 # Error Taxonomy Generator

@@ -1,0 +1,114 @@
+[
+  {
+    "_student_question": "What is 98.6 degrees Fahrenheit on the Kelvin scale?",
+    "ai_tutor_response": "Using the conversion between Fahrenheit and Kelvin (via Celsius):\n\n1) Convert °F to °C: \n\n° C = (° F - 32)× (5)/(9) = (98.6-32)×(5)/(9) = 37.0° C\n\n\n2) Convert °C to K: \n\nK = ° C + 273.15 = 37.0 + 273.15 = 310.2 K\n\n\n**So, 98.6°F = 310.2 K.**",
+    "expected_output": "98.6°F is 310.2 K.",
+    "expert_notes": "Correct conversion showing all steps. Arrives at 310.15 K which rounds to the expected 310.2 K.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between precision and accuracy in measurements?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "Accuracy describes how close a measurement is to the true or accepted value. Precision describes how close repeated measurements are to one another.",
+    "expert_notes": "Retrieval failure. Precision vs accuracy in measurements is a core topic covered in any introductory chemistry course.",
+    "is_accurate": "Fail",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Do leading zeros count as significant figures?",
+    "ai_tutor_response": "Leading zeros **do not** count as significant figures. They are only used to show the position of the first nonzero digit (e.g., in a decimal like 0.006606 s, the zeros before the 6 are not significant).",
+    "expected_output": "No. Leading zeros do not count as significant figures because they only locate the decimal point.",
+    "expert_notes": "Correctly states leading zeros are not significant and provides a clear example.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does atomic mass on the periodic table represent?",
+    "ai_tutor_response": "On the periodic table, **atomic mass represents the weighted average mass of an element’s atoms**, accounting for the fact that most elements occur as a **mixture of isotopes**. \n\nMore specifically, it’s the **sum of each isotope’s mass multiplied by its fractional abundance** (and the displayed number is given to the decimal places recognized by IUPAC).",
+    "expected_output": "The atomic mass listed on the periodic table is the weighted average mass of the naturally occurring isotopes of that element.",
+    "expert_notes": "Correctly explains atomic mass as a weighted average of naturally occurring isotopes.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the main idea behind dimensional analysis?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "Dimensional analysis uses conversion factors to cancel unwanted units and introduce the desired units. The method treats units like algebraic quantities.",
+    "expert_notes": "Retrieval failure. Dimensional analysis is a foundational chemistry skill. The tutor failed to retrieve relevant course material.",
+    "is_accurate": "Fail",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between mass and weight?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "Mass is the amount of matter in an object. Weight is the force exerted on that mass by gravity, so weight can change if gravity changes while mass does not.",
+    "expert_notes": "Retrieval failure. Mass vs weight is a fundamental concept. The tutor should have been able to answer from course materials.",
+    "is_accurate": "Fail",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Where are metals, nonmetals, and metalloids generally found on the periodic table?",
+    "ai_tutor_response": "- **Metals:** generally found on the **left and lower** parts of the periodic table. \n- **Nonmetals:** generally found in the **upper right** corner. \n- **Metalloids (semimetals):** found in the **border region between metals and nonmetals** (the “stair-step” area separating those two groups).",
+    "expected_output": "Metals are found mostly on the left and center of the periodic table. Nonmetals are mainly on the upper right. Metalloids lie along the stair-step boundary between them.",
+    "expert_notes": "Correctly locates metals, nonmetals, and metalloids. Minor: says 'left and lower' vs expected 'left and center' but both are acceptable descriptions.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Is salt dissolved in water homogeneous or heterogeneous? What about iron filings mixed with sulfur powder?",
+    "ai_tutor_response": "- **Salt dissolved in water:** **Homogeneous mixture (a solution).** When salt dissolves, you can’t easily tell that more than one substance is present by looking, even with a microscope.\n\n- **Iron filings mixed with sulfur powder:** **Heterogeneous mixture.** It’s easy to see which particles are iron and which are sulfur, so the mixture isn’t uniformly mixed.",
+    "expected_output": "Salt dissolved in water is a homogeneous mixture because it has a uniform composition throughout. Iron filings mixed with sulfur powder are a heterogeneous mixture because the different substances remain visibly distinct.",
+    "expert_notes": "Correctly identifies salt water as homogeneous and iron filings with sulfur as heterogeneous with clear reasoning.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the basic difference between solids and liquids?",
+    "ai_tutor_response": "The basic difference is how easily particles move:\n\n- **Both** solids and liquids have particles in contact with each other.\n- **In solids**, **intermolecular forces are strong enough to hold particles in place**, so solids **maintain their shape** and are **difficult to compress**.\n- **In liquids**, the intermolecular forces are **not strong enough to completely hold particles in fixed positions**, so liquids **don’t maintain a fixed shape** and instead **take the shape of their containers**.",
+    "expected_output": "Solids retain their own shape, while liquids flow and take the shape of their container. Both have definite volume, but liquids do not have definite shape.",
+    "expert_notes": "Correctly distinguishes solids (fixed shape) from liquids (take container shape).",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is molarity?",
+    "ai_tutor_response": "**Molarity (M)** is a concentration unit defined as the **number of moles of solute divided by the number of liters of solution**:\n\n\nMolarity (M)=(moles of solute)/(liters of solution)\n\n\nSo, if you know moles and liters, you can find molarity, and if you know two of the three quantities (moles, liters, molarity), you can calculate the third.",
+    "expected_output": "Molarity is a concentration unit defined as moles of solute per liter of solution.",
+    "expert_notes": "Correctly defines molarity as moles of solute per liter of solution.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What are the s block, p block, d block, and f block on the periodic table?",
+    "ai_tutor_response": "On the periodic table, the blocks are arranged according to which **subshells** are being filled:\n\n- **s block:** the **first two columns on the left** of the periodic table \n- **p block:** the **right-most six columns** \n- **d block:** the **middle 10 columns** \n- **f block:** the **14-column section** typically shown detached from the main table (though it could be part of the main body)",
+    "expected_output": "The blocks of the periodic table show which type of subshell is being filled by the highest-energy electrons. The left two columns are the s block, the right six columns are the p block, the middle ten columns are the d block, and the detached bottom rows are the f block.",
+    "expert_notes": "Correctly maps s/p/d/f blocks to periodic table regions.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does heat capacity describe?",
+    "ai_tutor_response": "In this context, **heat capacity** (or **specific heat capacity/specific heat**) describes **how much energy is needed to change a substance’s temperature**.\n\n- **Larger specific heat** → **more energy** required for the same temperature change (so the temperature changes less for a given amount of heat).\n- It relates heat and temperature change by: **q = mcΔ T**, where q is heat (energy transferred), m is mass, c is specific heat, and Δ T is the temperature change.",
+    "expected_output": "Heat capacity describes how much heat is needed to raise the temperature of a sample by a certain amount.",
+    "expert_notes": "Correctly explains heat capacity with the q = mcΔT relationship.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is density in chemistry?",
+    "ai_tutor_response": "In chemistry, **density** is a **physical property** defined as:\n\n\ndensity=(mass)/(volume)\n\n\nSo density tells you how much **mass** a substance has per unit **volume**. Common units include **g/mL** (or equivalently **g/cm³**), **g/L**, **kg/L**, and **kg/m³**.",
+    "expected_output": "Density is the amount of mass in a given volume of a substance. It is calculated as mass divided by volume.",
+    "expert_notes": "Correctly defines density as mass per unit volume with common units.",
+    "is_accurate": "Pass",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "How many meters are in 5.0 kilometers?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "5.0 kilometers equals 5,000 meters because 1 kilometer is 1,000 meters.",
+    "expert_notes": "Retrieval failure. Basic metric unit conversion — tutor should have answered from course materials.",
+    "is_accurate": "Fail",
+    "error_notes": ""
+  }
+]

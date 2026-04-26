@@ -1,7 +1,7 @@
 # Chemistry Course AI Tutor --- Design Document (v1)
 
 This document covers implementation design. Product requirements live in
-[`prd.md`](/Users/wenxingliu/dev/ai-tutor-bot/prd.md).
+[`prd.md`](prd.md).
 
 ## 1. API Design
 

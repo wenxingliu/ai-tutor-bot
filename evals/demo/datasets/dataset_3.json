@@ -1,0 +1,690 @@
+[
+  {
+    "_student_question": "Which of these is matter and which is not matter: air, a tree, and love?",
+    "ai_tutor_response": "- **Air**: **matter** (it has mass and takes up space). \n- **A tree**: **matter** (it has mass and takes up space). \n- **Love**: **not matter** (it is an emotion).",
+    "expected_output": "Air and a tree are matter because they have mass and occupy space. Love is not matter because it is an idea or feeling rather than a physical substance.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Is bread baking a physical change or a chemical change? What about water boiling?",
+    "ai_tutor_response": "- **Bread baking:** **Chemical change.** Baking involves chemical changes in the dough (like transformations that create fresh bread and new matter with new properties). \n- **Water boiling:** **Physical change.** Boiling is a **phase change** (liquid water → gas/steam) and does not change the chemical composition of water.",
+    "expected_output": "Bread baking is a chemical change because new substances form during the baking process. Water boiling is a physical change because the substance remains water while changing from liquid to gas.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between an element, a compound, and a mixture?",
+    "ai_tutor_response": "- **Element:** The simplest type of chemical substance; it **cannot be broken down into simpler chemical substances** by ordinary chemical means. Each element has its own unique physical and chemical properties.\n\n- **Compound:** A combination of **more than one element** chemically bonded together. A compound’s **physical and chemical properties are different** from those of its constituent elements—it behaves like a **completely different substance** (e.g., **water**, **sodium chloride**).\n\n- **Mixture:** A **physical combination** of two or more substances (not chemically bonded so it keeps its identities). There are two types:\n - **Heterogeneous mixture:** Different substances are **not uniformly mixed**, so it’s often possible to tell multiple substances are present (e.g., salt crystals mixed with steel wool).\n - **Homogeneous mixture (solution):** Substances are **intimately mixed** so the mixture **behaves as a single substance** and is hard to distinguish by sight (e.g., salt dissolved in water).",
+    "expected_output": "An element is a pure substance made of only one kind of atom. A compound is a pure substance made of two or more elements chemically combined in fixed proportions. A mixture is a physical combination of substances whose components keep their own identities.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What properties make an element a metal instead of a nonmetal?",
+    "ai_tutor_response": "An element is considered a **metal** rather than a **nonmetal** if it has these typical properties:\n\n- **Metals are shiny** (often silvery).\n- **Metals conduct electricity and heat well**.\n- **Metals are malleable** (can be pounded into thin sheets).\n- **Metals are ductile** (can be drawn into thin wires).\n\nIn contrast, **nonmetals** are usually **brittle as solids**, **do not conduct electricity or heat well**, and **cannot be made into thin sheets or wires**.",
+    "expected_output": "Metals are typically shiny, conduct electricity and heat well, are malleable, and are ductile. Nonmetals generally do not conduct heat or electricity well, are not malleable or ductile, and are often brittle if solid.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between a hypothesis, a theory, and a law in science?",
+    "ai_tutor_response": "In science (per your course text), **hypothesis, theory, and law** have specific meanings:\n\n- **Hypothesis:** an **educated guess** about how the natural universe works. It’s designed to be **testable** and scientists plan experiments to see whether it’s correct.\n- **Theory:** a **general statement** that **explains many observations**. A theory summarizes a large amount of evidence after enough tests/observations have been collected.\n- **Law:** a statement thought to be **never violated** by the natural universe (the course notes call a scientific law the **highest understanding** science has).\n\nSo: **hypothesis → testable guess**, **theory → well-supported explanation of many observations**, **law → an (inviolate) rule-like statement about how nature behaves.**",
+    "expected_output": "A hypothesis is a tentative explanation for observations. A theory is a broad, well-supported explanation of natural behavior. A law is a concise statement or mathematical relationship that describes a pattern in nature.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Write 79,345 in scientific notation and explain what the exponent means.",
+    "ai_tutor_response": "To write **79,345** in scientific notation, move the decimal point so the number is between **1 and 10**:\n\n- **79,345 → 7.9345** (moved 4 places left)\n\nSo,\n\n79{,}345 = 7.9345 × 10^4\n\n\n**What the exponent means:** \nThe **exponent (4)** tells how many times you multiply by **10** to get back to the original magnitude. In this case, **10^4** means the decimal was moved **four** places, and the exponent equals the **number of zeros** in the corresponding power-of-10 factor.",
+    "expected_output": "79,345 written in scientific notation is 7.9345 x 10^4. The exponent 4 means the decimal point was moved four places, so the number is multiplied by 10,000.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What do the prefixes kilo-, milli-, and micro- mean in SI units?",
+    "ai_tutor_response": "In SI:\n\n- **kilo- (k)** means **1{,}000 = 10^3** times the base unit. \n- **milli- (m)** means **1/1{,}000 = 10^-3** of the base unit. \n- **micro- (μ)** means **1/1{,}000{,}000 = 10^-6** of the base unit. \n\nSo, for example, **1 kilogram = 1,000 grams**, **1 millimeter = 0.001 meter**, and **1 micrometer = 10^-6 meter**.",
+    "expected_output": "Kilo- means 1,000 times the base unit, milli- means one-thousandth of the base unit, and micro- means one-millionth of the base unit.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "How many significant figures are in 0.00450?",
+    "ai_tutor_response": "For **0.00450**, only the **nonzero digits** are significant, and the **trailing zeroes after a decimal point** are significant.\n\n- 0.00450 has digits: **4, 5, 0**\n- So it has **3 significant figures**.",
+    "expected_output": "0.00450 has 3 significant figures. The leading zeros are placeholders and are not significant, while the digits 4, 5, and the trailing 0 after the decimal are significant.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why does chemistry use Kelvin instead of relying only on Celsius or Fahrenheit?",
+    "ai_tutor_response": "Chemistry prefers the **Kelvin** scale because it is built on **absolute zero** and is therefore the most “fundamental” temperature reference.\n\nFrom the course text:\n- The Kelvin scale is defined so that **0 K = absolute zero**, the **minimum possible temperature**.\n- Kelvin temperatures are counted upward from that point (so the scale doesn’t just shift relative to another everyday scale—it has a physical meaning tied to absolute zero).\n- Also, chemistry uses **Celsius and Kelvin almost exclusively**, while **Fahrenheit is rarely used** for lab-measured temperatures.\n\nSo, Kelvin isn’t chosen merely for convenience—it’s anchored to absolute zero, which makes it especially appropriate for scientific work.",
+    "expected_output": "Chemistry uses Kelvin because it is an absolute temperature scale with zero at the lowest possible temperature. Many gas-law and thermodynamic relationships require absolute temperature, which is why Kelvin is preferred in scientific work.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "How do you convert 27 degrees Celsius to Kelvin?",
+    "ai_tutor_response": "To convert °C to K, use:\n\n\nK = {}° C + 273.15\n\n\nSo for 27°C:\n\n\nK = 27 + 273.15 = 300.15 K\n\n\n(You could also approximate using 273: 27+273=300 K.)",
+    "expected_output": "Add 273.15 to the Celsius temperature. So 27°C is 300.15 K, often rounded to 300 K.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "If I know a sample's mass and volume, how do I calculate density?",
+    "ai_tutor_response": "To calculate density from mass and volume, use the definition:\n\n\ndensity=(mass)/(volume)\n\n\nJust make sure the units are consistent with the type of density you’re using (commonly g/mL or g/cm³). If your mass is in grams and your volume is in milliliters (or cm³), density will come out in g/mL (or g/cm³).",
+    "expected_output": "Use the equation density = mass / volume. Divide the sample's mass by its volume to get its density.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Does the final zero in 12.30 count as significant?",
+    "ai_tutor_response": "Yes. The final zero in **12.30** counts as significant because it is a **trailing zero with a decimal point**, and rule **3** says: *zeros at the end of a number with a decimal point are significant*. \n\nSo **12.30** has **3 significant figures** (1, 2, and the 0).",
+    "expected_output": "Yes. In 12.30, the trailing zero after the decimal point is significant, so the measurement has 4 significant figures.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What are protons, neutrons, and electrons, and where are they located in an atom?",
+    "ai_tutor_response": "Protons, neutrons, and electrons are the three subatomic particles that make up atoms:\n\n- **Protons (p⁺):** Have a **positive charge** and are located in the **nucleus** (the center of the atom).\n- **Neutrons (n or n⁰):** Have **no charge** and are also located in the **nucleus**.\n- **Electrons (e⁻):** Have a **negative charge** and are located **outside the nucleus**, orbiting around it.\n\nSo, **protons and neutrons are in the nucleus**, while **electrons orbit the nucleus**.",
+    "expected_output": "Protons are positively charged particles found in the nucleus. Neutrons are neutral particles also found in the nucleus. Electrons are negatively charged particles located outside the nucleus.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does an element's atomic number tell you?",
+    "ai_tutor_response": "An element’s **atomic number tells you the number of protons in the nucleus** of its atoms. It uniquely identifies the element (e.g., hydrogen has atomic number 1 because it has 1 proton; iron has atomic number 26 because it has 26 protons).",
+    "expected_output": "The atomic number tells you how many protons are in the nucleus of an atom. For a neutral atom, it also tells you the number of electrons.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the mass number of an atom?",
+    "ai_tutor_response": "The **mass number** of an atom is the total number of **protons + neutrons** in the nucleus. (It ignores the electrons.)",
+    "expected_output": "The mass number is the total number of protons and neutrons in an atom's nucleus.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What makes one isotope of an element different from another isotope of the same element?",
+    "ai_tutor_response": "One isotope of an element is different from another isotope of the same element because they have the **same number of protons** (so they are the same element) but **different numbers of neutrons** in their nuclei.",
+    "expected_output": "Isotopes of the same element have the same number of protons but different numbers of neutrons, so they have different mass numbers.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is an ion?",
+    "ai_tutor_response": "An **ion** is a species that has an overall electric charge because **electrons have moved from one atom to another**. If the ion is overall **positive**, it’s a **cation**; if it’s overall **negative**, it’s an **anion**.",
+    "expected_output": "An ion is an atom or group of atoms that has a net electric charge because it has gained or lost electrons.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between a cation and an anion?",
+    "ai_tutor_response": "A **cation** is an ion with an overall **positive** charge (it forms when an atom **loses electrons**). \nAn **anion** is an ion with an overall **negative** charge (it forms when an atom **gains electrons**).\n\nSo: **lose e⁻ → cation (+)**, **gain e⁻ → anion (−)**.",
+    "expected_output": "A cation is a positively charged ion formed when atoms lose electrons. An anion is a negatively charged ion formed when atoms gain electrons.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Is every molecule a compound? What's the difference?",
+    "ai_tutor_response": "Not every molecule is a compound.\n\n- **Molecule:** a multi-atom combination that behaves as a single particle (the smallest part of a substance with that substance’s physical and chemical properties).\n- **Compound:** a combination of **more than one element**.\n\nSo:\n- A molecule made from **one element only** (like **H₂** or **O₂**) is a **molecule**, but it is **not a compound**.\n- A molecule made from **two or more different elements** (like a binary compound) **is a compound**.\n\n**Difference in one line:** compounds require **more than one element**, while molecules just require **more than one atom** connected together.",
+    "expected_output": "A molecule is two or more atoms chemically bonded together. A compound is made from atoms of different elements in fixed proportions, so not every molecule is a compound because some molecules contain only one element, such as O2.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a formula unit in an ionic compound?",
+    "ai_tutor_response": "In an ionic compound, a **formula unit** is the smallest whole-number ratio of ions shown in the **chemical formula**.\n\nFor example, in **MgCl₂**, the formula unit contains **1 Mg²⁺ ion and 2 Cl⁻ ions**—that’s the simplest set of ions whose total positive charge balances the total negative charge.",
+    "expected_output": "A formula unit is the lowest whole-number ratio of ions in an ionic compound.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why is the angstrom a useful unit in chemistry even though it is not an SI unit?",
+    "ai_tutor_response": "The angstrom is useful because it matches the typical size scale of the “ultimate particles” that make up matter—about 10^-10 m, or roughly 1 Å. So it lets chemists conveniently describe atomic and other very small dimensions without using extremely small or hard-to-read SI-length numbers, even though it isn’t an approved SI unit.",
+    "expected_output": "The angstrom is useful because atoms and bond lengths are on the order of 10^-10 m, so it is a convenient size scale for atomic dimensions.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What do periods and groups mean on the periodic table?",
+    "ai_tutor_response": "On the periodic table:\n\n- **Periods** are the **horizontal rows**. Elements in the same period have electrons filling the **same principal energy level (shell)** as you move across the row.\n- **Groups** are the **vertical columns**. Elements in the same group have **similar chemical properties** because they have similar **valence electron configurations** (the same type of subshells are being filled in that column pattern).",
+    "expected_output": "Periods are the horizontal rows of the periodic table. Groups are the vertical columns, and elements in the same group often have similar chemical properties.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What are valence electrons?",
+    "ai_tutor_response": "Valence electrons are the electrons in an atom’s **highest-numbered shell** (the **valence shell**), **plus any electrons in the last unfilled subshell**. They largely **control the chemistry** of an atom, and in the periodic table, elements in the same column tend to have the **same valence-shell electron configuration**.",
+    "expected_output": "Valence electrons are the electrons in the outermost occupied shell of an atom. They are the electrons most involved in chemical bonding.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the basic idea of electron shells in atoms?",
+    "ai_tutor_response": "The basic idea is that electrons in an atom occupy **quantized energy levels** described by **quantum mechanics**. In particular, electrons are grouped into **electron shells** based on the **principal quantum number, n**.\n\n- The **principal quantum number n** determines the **energy** of an electron largely.\n- All electrons in the same atom with the **same n** are said to be in the same **electron shell**.\n- The possible values of n are **positive integers**: 1, 2, 3, dots.",
+    "expected_output": "Electrons occupy regions around the nucleus called shells or energy levels. Electrons closer to the nucleus are generally lower in energy than electrons in more distant shells.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What do the labels s, p, d, and f mean in electron structure?",
+    "ai_tutor_response": "In electron structure, the labels **s, p, d, and f** refer to the **types of subshells** within an atom’s shells (grouped by the **orbital type** associated with different shapes/orientations):\n\n- **s subshell:** has **1 orbital** (s is spherical)\n- **p subshell:** has **3 orbitals** (p orbitals are dumbbell-shaped and oriented along different axes)\n- **d subshell:** has **5 orbitals** (d orbitals are multi-lobed rosettes; the d_z^2 orbital is a “dumbbell + torus” type)\n- **f subshell:** has **7 orbitals** (f subshell orbitals are part of the f block)\n\nThese subshells determine how electrons are partitioned, and each subshell has a maximum number of electrons:\n- **s max = 2**\n- **p max = 6**\n- **d max = 10**\n- **f max = 14**",
+    "expected_output": "The labels s, p, d, and f identify subshells, which are subdivisions of electron shells. They describe different types of orbitals and organize how electrons fill atoms.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does an electron configuration tell you?",
+    "ai_tutor_response": "An **electron configuration** tells you the **arrangement of an atom’s electrons among its shells and subshells**. It does this by **listing the shell and subshell labels in the order they fill**, with a **right superscript** indicating **how many electrons are in each subshell**.",
+    "expected_output": "An electron configuration shows how an atom's electrons are distributed among shells and subshells.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "How does atomic size usually change as you go down a group?",
+    "ai_tutor_response": "As you go **down a group (column)** of the periodic table, **atomic size (atomic radius) usually increases**. This happens because the **valence electron shell gets farther from the nucleus**—the **principal quantum number increases**, so there’s a larger, more distant electron shell.",
+    "expected_output": "Atomic size generally increases as you go down a group because additional electron shells are added.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "In a general sense, do metals usually lose electrons more easily than nonmetals?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "Yes. Metals generally lose electrons more easily and form cations, while nonmetals are more likely to gain electrons or share them.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why are noble gases usually unreactive?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "Noble gases are usually unreactive because their outer electron shells are already full, which makes them especially stable.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is ionic bonding?",
+    "ai_tutor_response": "An **ionic bond** is the attraction between **oppositely charged ions** formed when **electrons transfer** from one atom to another. During electron transfer, the **number of electrons lost must equal the number of electrons gained**, so the resulting ions attract each other electrostatically.",
+    "expected_output": "Ionic bonding is the electrostatic attraction between oppositely charged ions that forms after electrons are transferred from one atom to another.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a covalent bond?",
+    "ai_tutor_response": "A **covalent bond** is a bond formed when **two atoms share electrons** between them so that each atom can achieve a **complete valence shell** (full outer energy level).",
+    "expected_output": "A covalent bond is a bond formed when two atoms share electrons.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between ionic bonding and covalent bonding?",
+    "ai_tutor_response": "Ionic bonding and covalent bonding are two different ways atoms can achieve a complete valence shell (stable electron configuration):\n\n- **Ionic bonding:** Happens when it is **easy for one atom to lose electrons** and another atom to **gain electrons**. The result is **ions** with opposite charges that attract each other (ionic compounds).\n\n- **Covalent bonding:** Happens when atoms **don’t easily lose or gain electrons**, so instead they achieve stability by **sharing electrons** between atoms. This shared electron pair forms a **covalent bond**.\n\n**In short:** \n- **Ionic = electron transfer (lose/gain) → attraction between ions** \n- **Covalent = electron sharing → attraction within a shared pair**",
+    "expected_output": "Ionic bonding involves transfer of electrons and attraction between resulting ions. Covalent bonding involves atoms sharing electrons.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does a Lewis electron dot diagram show?",
+    "ai_tutor_response": "A **Lewis electron dot diagram** shows an atom’s **valence electrons**. It uses **dots around the element’s symbol**, where the **number of dots equals the number of valence electrons**. The dots are placed around the symbol (right/left and above/below), with **no more than two dots on any one side**.",
+    "expected_output": "A Lewis electron dot diagram shows the valence electrons of an atom or ion as dots around its symbol.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the basic idea of the octet rule?",
+    "ai_tutor_response": "The **octet rule** is a bonding “rule of thumb” stating that, when atoms form compounds, they tend to arrange their bonding so that each atom has a **complete valence shell of 8 electrons** (an “octet”). It’s useful for predicting common bonding patterns, though there are known exceptions.",
+    "expected_output": "The octet rule is the idea that many atoms tend to gain, lose, or share electrons so they achieve a full outer shell with eight valence electrons.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why is hydrogen an exception to the octet rule?",
+    "ai_tutor_response": "Hydrogen isn’t really an exception to the *idea* behind the octet rule—it’s an exception to the **octet** part because hydrogen’s “stable” valence shell contains **2 electrons**, not 8.\n\nIn the bonding examples from the course, each H atom has **one** valence electron. When two hydrogen atoms form a covalent bond (H–H), they share their electrons so that **each hydrogen ends up with two electrons around it** (a filled valence shell). With a filled shell of **2 electrons**, the bond is stable. This is why hydrogen forms stable diatomic molecules even though it does not reach an octet.",
+    "expected_output": "Hydrogen is an exception because its first shell is full with only two electrons, not eight.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does a molecular formula tell you?",
+    "ai_tutor_response": "A **molecular formula** tells you **which elements are in a molecule and how many atoms of each element** are present (using subscripts to show multiple atoms; no subscript means 1).",
+    "expected_output": "A molecular formula tells you which elements are present in a molecule and how many atoms of each element it contains.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What extra information does a structural formula give compared with a molecular formula?",
+    "ai_tutor_response": "A **molecular formula** (like **C₃H₈**) tells you only how many atoms of each element are in the molecule. \n\nA **structural formula** tells you the **arrangement (connectivity) of the atoms**—i.e., how the atoms are bonded and the molecule’s structure (for alkanes, for example, it shows the C-atom “backbone” and how H atoms are attached).",
+    "expected_output": "A structural formula shows how the atoms are connected to one another, not just how many atoms of each element are present.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What do single, double, and triple bonds represent in covalent compounds?",
+    "ai_tutor_response": "In Lewis structures for covalent compounds:\n\n- **Single bond**: represents **one shared pair of electrons** between two atoms (often drawn as **A–B**).\n- **Double bond**: represents **two shared pairs of electrons** between the atoms (drawn as **A = B**).\n- **Triple bond**: represents **three shared pairs of electrons** between the atoms (drawn as **A ≡ B**).\n\nThese multiple bonds form to help atoms achieve a **stable valence shell** (e.g., complete octets).",
+    "expected_output": "A single bond represents one shared pair of electrons, a double bond represents two shared pairs, and a triple bond represents three shared pairs.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why do chemists use systematic names and formulas instead of casual names?",
+    "ai_tutor_response": "Chemists use **systematic names and formulas** because they let you name a compound (and identify it) in a way that is **unique and unambiguous**.\n\nFrom the course material: there is a specific system of naming compounds called **chemical nomenclature**, and **by following the rules of nomenclature, each compound has its own unique name**, and **each name refers to one and only one compound**. This avoids confusion that can happen with casual/common naming.\n\nThat said, the course also notes that some molecules have **common names** used as part of the formal system (for example, **H₂O = water** and **NH₃ = ammonia**), but systematic nomenclature is what guarantees uniqueness across all compounds.",
+    "expected_output": "Systematic names and formulas let chemists communicate exactly which substance they mean and how it is composed, avoiding ambiguity.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a chemical reaction?",
+    "ai_tutor_response": "A **chemical reaction** is a process that expresses a **chemical change**—it shows how one set of substances (reactants) changes into new substances (products). For example, the text states that **hydrogen reacts with oxygen to make water**.",
+    "expected_output": "A chemical reaction is a process in which substances are transformed into new substances by rearranging atoms.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "In a chemical equation, what are reactants and products?",
+    "ai_tutor_response": "In a chemical equation:\n\n- **Reactants** are the substances written on the **left side** of the arrow. They are the starting materials that undergo the chemical change. \n- **Products** are the substances written on the **right side** of the arrow. They are the substances formed as a result of the reaction. \n\nThe arrow (→) indicates that a chemical reaction occurs from the reactants to the products.",
+    "expected_output": "Reactants are the starting substances written on the left side of a chemical equation. Products are the substances formed, written on the right side.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does a balanced chemical equation tell us about a reaction?",
+    "ai_tutor_response": "A **balanced chemical equation** tells us that the reaction is **properly “recipe-like” in terms of atoms**: the **number of each type of atom is the same on both sides** of the arrow. It also means the coefficients can be read as **mole (and molecule) ratios**—for example, “2 mol of H₂ react with 1 mol of O₂ to make 2 mol of H₂O,” as reflected by the balanced equation.",
+    "expected_output": "A balanced chemical equation shows that atoms are conserved in a reaction and gives the whole-number ratios in which reactants and products are related.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why must chemical equations be balanced?",
+    "ai_tutor_response": "Chemical equations must be balanced because they must represent the same reaction in a way that conserves atoms. In other words, the number of each type of atom on the reactant side has to equal the number of that same type of atom on the product side (the equation is a “recipe” written in terms of atoms and molecules).\n\nA balanced chemical equation also lets you use the coefficients as ratios for amounts: the coefficients show the correct relative numbers of molecules and (equivalently) moles that react and form.",
+    "expected_output": "Chemical equations must be balanced because matter is conserved in chemical reactions, so the same number of each type of atom must appear on both sides.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What do the labels (s), (l), (g), and (aq) mean in a chemical equation?",
+    "ai_tutor_response": "In a chemical equation, the phase labels indicate the physical state of each substance:\n\n- **(s)** = **solid**\n- **(l)** = **liquid**\n- **(g)** = **gas**\n- **(aq)** = **aqueous**, meaning the substance is **dissolved in water**",
+    "expected_output": "(s) means solid, (l) means liquid, (g) means gas, and (aq) means aqueous, which means dissolved in water.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the law of conservation of mass in chemistry?",
+    "ai_tutor_response": "I can help, but the course excerpts you provided don’t contain a specific statement of the **law of conservation of mass** in chemistry. The only “conservation” law shown in your context is **the law of conservation of energy** (with definitions like “the total energy of an isolated system does not increase or decrease”).\n\nIf you can paste the section from the course where conservation of mass is defined, I can explain it using that wording.",
+    "expected_output": "The law of conservation of mass says that mass is not created or destroyed in a chemical reaction, so the total mass of reactants equals the total mass of products.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a mole in chemistry, and why is it useful?",
+    "ai_tutor_response": "A **mole** (mol) in chemistry is a unit that represents a **number of things**—either **atoms or molecules**. It is defined as the number of atoms in **exactly 12 g of carbon-12**. That number is extremely large:\n\n- **1 mol = 6.02214179 × 10^23** atoms (or molecules, depending on what you’re counting)\n\n### Why it’s useful\nChemistry often needs a way to connect the **microscopic world** (individual atoms and molecules) to the **macroscopic world** (measurable quantities like grams and volume). The mole is important because it provides this bridge:\n\n- The **mass of 1 mole** of a substance (in **grams**) is numerically equal to the substance’s **molar mass** (in **atomic mass units per particle**, as described in the course).\n- This lets you convert between **mass**, **moles**, and **number of atoms/molecules** using a consistent framework.",
+    "expected_output": "A mole is a counting unit used for atoms, molecules, or ions. One mole contains 6.022 x 10^23 particles, which lets chemists connect tiny particles to measurable laboratory amounts.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is Avogadro's number?",
+    "ai_tutor_response": "Avogadro’s number (also called the Avogadro constant, N_A) is the number of “things” in 1 mole. In this course, it’s given as:\n\n\n1 mol = 6.022 × 10^23 things\n\n\nwhere the “things” are atoms or molecules (depending on what the substance is).",
+    "expected_output": "Avogadro's number is 6.022 x 10^23. It is the number of particles in one mole.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is molar mass?",
+    "ai_tutor_response": "**Molar mass** is the mass of **1 mol** of a substance.\n\n- For an **element**, it’s the number of **grams per mole of atoms** of that element.\n- For a **compound**, it’s the number of **grams per mole of molecules** of that compound.\n- You calculate molar mass by **adding the atomic masses** of the atoms in the substance’s formula, and the result is expressed in **g/mol** (grams per mole).\n\nIt’s numerically equal to the substance’s mass in atomic mass units (**u**) for **1 formula unit** (atom/molecule), but with the units changed to **g/mol**.",
+    "expected_output": "Molar mass is the mass of one mole of a substance, usually expressed in grams per mole.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "In the equation 2H2 + O2 -> 2H2O, what do the coefficients tell us?",
+    "ai_tutor_response": "In the balanced equation **2H₂ + O₂ → 2H₂O**, the **coefficients** (the 2, 1, and 2) tell you the **relative amounts in stoichiometric ratio**.\n\n- **2** in front of **H₂** means **two “units” of hydrogen** react.\n- **1** in front of **O₂** (implied) means **one unit of oxygen** reacts.\n- **2** in front of **H₂O** means **two units of water** are produced.\n\nMore specifically, the coefficients can be read as **moles**: \n**“two moles of H₂ react with one mole of O₂ to make two moles of H₂O.”**",
+    "expected_output": "The coefficients show the mole ratios in the reaction: 2 moles of H2 react with 1 mole of O2 to produce 2 moles of H2O.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is stoichiometry used for?",
+    "ai_tutor_response": "Stoichiometry is used to **relate the amounts of reactants and products in a chemical reaction**.\n\nIn particular, it lets you use a **balanced chemical equation** (which is balanced in **moles**) to convert between different measured/known quantities—like figuring out how many moles (and then, if needed, molecules or grams) of one substance correspond to the amount of another substance in the reaction.",
+    "expected_output": "Stoichiometry is used to calculate how much reactant is needed or how much product can form by using the mole ratios from a balanced chemical equation.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a limiting reactant?",
+    "ai_tutor_response": "A **limiting reactant (limiting reagent)** is the reactant that is used up **first** in a chemical reaction. It **produces the least amount of product**, while the other reactants are **in excess** (they have more than enough to react completely once the limiting reactant is gone).",
+    "expected_output": "A limiting reactant is the reactant that is used up first in a chemical reaction and therefore determines the maximum amount of product that can form.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is an excess reactant?",
+    "ai_tutor_response": "An **excess reactant** is the reactant that is present in **more than enough** quantity to react completely. \n\nIn a reaction, you typically **run out of one reactant first**—that one is the **limiting reagent**. The reactant you **do not run out of** is called the **excess reactant**.",
+    "expected_output": "An excess reactant is a reactant present in more than the amount required by the stoichiometric ratio, so some of it remains after the reaction ends.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does percent yield tell you?",
+    "ai_tutor_response": "Percent yield tells you **how efficiently a reaction produced the desired product**, by comparing the **actual yield** to the **theoretical yield**:\n\n\n% yield=(actual yield)/(theoretical yield)× 100\n\n\nA percent yield **between 0% and 100%** means the actual amount made was less than (or equal to) what was predicted from the balanced equation. If it’s **greater than 100%**, that indicates an error.",
+    "expected_output": "Percent yield compares the actual amount of product obtained to the theoretical maximum amount and is calculated as actual yield divided by theoretical yield times 100%.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is an empirical formula?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "An empirical formula gives the simplest whole-number ratio of atoms of each element in a compound.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "How is a molecular formula different from an empirical formula?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "A molecular formula gives the actual number of atoms of each element in a molecule. An empirical formula gives only the simplest whole-number ratio of those atoms.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What are some general properties of gases?",
+    "ai_tutor_response": "Some general properties of gases (as described in the course) are:\n\n- **No definite shape or volume:** gases **fill whatever container** they are in. \n- **Compressible and expandable:** gases can **compress and expand**, sometimes substantially. \n- **Low density:** gases have **extremely low densities** (because most of the gas is **empty space**). \n- **They tend to mix spontaneously:** because gas particles are in **constant motion** and collide with each other, **two or more gases will mix**.",
+    "expected_output": "Gases expand to fill their containers, are highly compressible, have relatively low densities, and mix readily with one another.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is pressure in the context of gases?",
+    "ai_tutor_response": "In gases, **pressure (P)** is the result of gas particles constantly colliding with the **walls of their container**. Each collision exerts a force on the wall, and **the sum of all those forces spread over the wall area** gives the pressure:\n\n\nP=(force from gas particle/wall collisions)/(area of the wall)\n\n\nSo, higher collision force (or smaller area) means **higher pressure**.",
+    "expected_output": "Gas pressure is the force per unit area produced when gas particles collide with the walls of a container.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What are some common units used for gas pressure?",
+    "ai_tutor_response": "Common units for gas pressure include:\n\n- **Atmosphere (atm)**\n- **Millimeters of mercury (mmHg)** (pressure from a 1 mm high column of mercury)\n- **Torr** (equal to **1 mmHg**)\n- **Pascal (Pa)**, the SI unit, defined as **1 N/m²** (often too small for everyday use)\n\nAlso, **1 atm** is based on average sea-level atmospheric pressure, though that varies.",
+    "expected_output": "Common gas-pressure units include atmospheres (atm), millimeters of mercury (mmHg), torr, and pascals or kilopascals.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "According to Boyle's law, what happens to gas volume when pressure increases at constant temperature?",
+    "ai_tutor_response": "According to **Boyle’s law**, pressure and volume are **inversely related** at constant temperature. So if the **pressure increases**, the **gas volume decreases** (to keep P × V constant).",
+    "expected_output": "At constant temperature and amount of gas, volume decreases as pressure increases. Boyle's law describes an inverse relationship between pressure and volume.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "According to Charles's law, what happens to gas volume when temperature increases at constant pressure?",
+    "ai_tutor_response": "According to **Charles’s law** (with **pressure and amount constant**), a gas’s **volume increases directly with its absolute temperature (Kelvin)**. So, if the temperature increases, the gas volume **increases proportionally**.",
+    "expected_output": "At constant pressure and amount of gas, volume increases as temperature increases. Charles's law describes a direct relationship between volume and absolute temperature.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What has to stay constant when you apply Boyle's law?",
+    "ai_tutor_response": "When applying **Boyle’s law**, you must keep **temperature (T) and the amount of gas (n) constant**.",
+    "expected_output": "For Boyle's law, temperature and the amount of gas must stay constant.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What has to stay constant when you apply Charles's law?",
+    "ai_tutor_response": "When applying **Charles’s law**, you must keep **pressure (P)** and the **amount of gas (n, moles)** constant. The relationship then involves how **volume (V)** changes with **absolute temperature (T in Kelvin)**.",
+    "expected_output": "For Charles's law, pressure and the amount of gas must stay constant.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is absolute zero?",
+    "ai_tutor_response": "I could not find enough support in the uploaded course materials to answer that confidently.",
+    "expected_output": "Absolute zero is 0 K, the lowest possible temperature. It corresponds to about -273.15°C.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why does heating a gas usually make it expand if pressure is allowed to stay constant?",
+    "ai_tutor_response": "Heating a gas usually makes it expand (when pressure is kept constant) because temperature and volume are directly related for a fixed amount of gas at constant pressure.\n\nFrom the gas-law idea in the notes, when **pressure (P)** is constant, the law applies so that the gas must change its **volume (V)** when **temperature (T)** changes to keep the relationship between these properties satisfied (i.e., the model predicts P constant Rightarrow V increases as T increases). \n\nSo, if you heat the gas, its temperature rises, and since pressure is allowed to stay the same, the gas’s volume must increase—meaning the gas expands.",
+    "expected_output": "Heating a gas increases the kinetic energy of its particles. To keep pressure constant, the gas expands so the particles have more space and the collision rate per area stays consistent.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "If pressure increases and temperature stays the same, would a gas need a larger or smaller volume?",
+    "ai_tutor_response": "If **pressure increases** while **temperature stays the same**, then (from **Boyle’s law**, with temperature constant) the gas’s **volume must decrease**. \n\nSo the gas needs a **smaller volume**.",
+    "expected_output": "It would need a smaller volume. At constant temperature, increasing pressure corresponds to decreasing volume.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is energy according to the thermochemistry chapter?",
+    "ai_tutor_response": "In the thermochemistry/energy parts of the chapter, **energy** is defined as **the ability to do work**. Work is related to energy through the idea that applying a **force over a distance** does work.\n\nFrom the chapter:\n- **Work** is defined as: w = F × Δ x \n- In SI units, this gives **energy/work** units of **joules (J)**:\n - 1 J = 1 Ncdotm\n\nSo, in thermochemistry, when we talk about energy changes in reactions (like via **enthalpy change Δ H**), we’re tracking the heat/energy associated with processes where reactions occur under (typically) constant pressure.",
+    "expected_output": "Energy is the ability to do work.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the law of conservation of energy?",
+    "ai_tutor_response": "The **law of conservation of energy** states that **the total energy of an isolated system does not increase or decrease**. In other words, energy is conserved—its total amount stays constant over time.",
+    "expected_output": "The law of conservation of energy says that the total energy of an isolated system does not increase or decrease.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does conserved mean in the phrase 'conservation of energy'?",
+    "ai_tutor_response": "In the phrase **“conservation of energy,”** the word **conserved** means that the **total energy of an isolated system does not increase or decrease**—it stays the same (it’s not “lost” or “gained,” only possibly transformed).",
+    "expected_output": "Conserved means the total amount stays constant. Energy can change form or move between parts of a system, but the total does not change in an isolated system.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "In thermochemistry, what is the difference between work and heat?",
+    "ai_tutor_response": "In the thermochemistry context from your course:\n\n- **Work (w)** is **energy transferred to or from a system due to volume change against an external pressure**. For a gas with constant external pressure, the course gives: \n \n w = -P_ext Δ V\n \n So if the gas **expands** (Δ V>0), the work is **negative** because the gas does work on the surroundings.\n\n- **Heat (q)** is **energy transferred because of a temperature difference** between bodies. The course defines heat as: \n - measured in joules, and \n - related to temperature change by: \n \n q = m c Δ T\n \n\nSo, the key difference is: **work comes from pressure–volume effects, while heat comes from temperature differences.**",
+    "expected_output": "Work is energy transfer associated with a force acting through a distance, such as expansion against pressure. Heat is energy transferred because of a temperature difference.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "When a gas expands against an external pressure, is the work term positive or negative?",
+    "ai_tutor_response": "When a gas **expands** against an external pressure, its volume increases, so **Δ V is positive**. The work is given by\n\n\nw = -P_ext Δ V\n\n\nBecause P_ext is positive and Δ V>0, the negative sign makes **w negative**. \n\nSo, **work is negative for expansion** (the gas loses energy as work).",
+    "expected_output": "It is negative for the system. When a gas expands, it does work on the surroundings, so w = -PextΔV gives a negative value when volume increases.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is specific heat capacity?",
+    "ai_tutor_response": "Specific heat capacity (often just called **specific heat**) is a measure of **how much energy is needed to change the temperature of a substance**. The larger the specific heat, the **more heat energy** it takes to produce a given temperature change.\n\nFrom the course, it’s related to heat by:\n\nq = m c Δ T\n\nwhere \n- q = heat (energy transferred, in joules) \n- m = mass \n- c = specific heat capacity \n- Δ T = temperature change \n\nThe units of c depend on the units used for Δ T, but the **magnitude of Δ T** is the same whether you use **°C or K**.",
+    "expected_output": "Specific heat capacity is the amount of heat required to raise the temperature of 1 gram of a substance by 1 degree Celsius or 1 kelvin.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is enthalpy change used to describe in chemistry?",
+    "ai_tutor_response": "In chemistry, **enthalpy change** (written as **ΔH**) is used to describe the **heat energy change of a process/reaction when the pressure is held constant**:\n\n\nΔ H equiv q at constant pressure\n\n\nSo ΔH tells you how much energy is transferred as **heat** under constant pressure conditions, and its sign indicates whether the reaction is **endothermic** (**ΔH > 0**, absorbs heat) or **exothermic** (**ΔH < 0**, releases heat).",
+    "expected_output": "Enthalpy change describes the heat absorbed or released by a process at constant pressure.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between an exothermic process and an endothermic process?",
+    "ai_tutor_response": "An **endothermic** process is one where the **system absorbs energy** (energy is a “reactant”): \n**energy + reactants → products**. \nOn an energy diagram, the **products are at higher energy** than the reactants, and **ΔH is positive**.\n\nAn **exothermic** process is one where the **system gives off energy** (energy is a “product”): \n**reactants → products + energy**. \nOn an energy diagram, the **products are at lower energy** than the reactants, and **ΔH is negative**.",
+    "expected_output": "An exothermic process releases heat to the surroundings. An endothermic process absorbs heat from the surroundings.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a formation reaction?",
+    "ai_tutor_response": "A **formation reaction** is a reaction that **produces exactly one mole of a substance from its elements** (i.e., the reactants are the element(s) in their standard states). \n\n**Example:** \n\nC(s) + O_2(g) → CO_2(g)\n\nThis is a formation reaction because **1 mole of CO_2** is formed from its **elements**.",
+    "expected_output": "A formation reaction is a reaction in which one mole of a substance is formed from its constituent elements in their standard states.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "According to the textbook, is glass a liquid at room temperature?",
+    "ai_tutor_response": "No. The textbook directly addresses an urban legend that glass is an extremely thick liquid at room temperature and states there’s no credible evidence for that claim. Instead, it notes that glass behaves like a **solid**—it keeps its original shape (unless it breaks) and doesn’t “flow” over time.",
+    "expected_output": "No. The textbook explicitly states that glass is a solid at room temperature, not a liquid.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why do liquids flow more easily than solids?",
+    "ai_tutor_response": "Liquids flow more easily than solids because of how they respond to an applied force.\n\n- **Liquids:** when a **small force** is applied, liquids **flow** (they keep changing shape as long as the force is present, even if slowly).\n- **Solids:** a **small force** can cause **deformation**, but when the force is **removed**, solids **return to their original shape** (they resist lasting shape change).\n\nSo the key idea is that **liquids do not “spring back”** the way solids do—under applied force their structure allows continuous rearrangement, which is what makes them flow.",
+    "expected_output": "Liquid particles are close together but can move past one another, so liquids flow. In solids, particles are held in more fixed positions.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a solution in chemistry?",
+    "ai_tutor_response": "In chemistry, a **solution** is a **homogeneous mixture** made by **dissolving a solute** in a **solvent**. \n\n- The **solvent** is the **major component** (the larger amount by mass or moles). \n- The **solute** is the **minor component** (the smaller amount by mass or moles). \n\nThe important point emphasized in the course is that **the overall phase of the solution matches the phase of the solvent** (e.g., solid NaCl in liquid water is a solution; gaseous O₂ in gaseous N₂ is also a solution).",
+    "expected_output": "A solution is a homogeneous mixture in which one or more solutes are dissolved in a solvent.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between a solute and a solvent?",
+    "ai_tutor_response": "In a solution:\n\n- **Solvent** = the **major component**, present in the greatest amount (by **mass or by moles**). \n- **Solute** = the **minor component**, the substance that is **dissolved** in the solvent.\n\nSo, the solvent is what you have the most of, and the solute is what gets dissolved into it.",
+    "expected_output": "The solute is the substance being dissolved. The solvent is the substance that does the dissolving and is usually present in greater amount.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between a saturated solution and an unsaturated solution?",
+    "ai_tutor_response": "A **saturated solution** is one that contains the **maximum amount of solute** that can dissolve in the solvent under the given conditions (temperature, pressure). If you add more solute, it will **not dissolve** (it may remain as solid).\n\nAn **unsaturated solution** contains **less than the maximum** amount of solute for those same conditions, so the solution can still **dissolve additional solute**.",
+    "expected_output": "A saturated solution contains the maximum amount of solute that can dissolve under the given conditions. An unsaturated solution contains less than that maximum amount.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is a supersaturated solution?",
+    "ai_tutor_response": "A **supersaturated solution** is a solution that contains **more solute than the normal maximum amount that can dissolve in that solvent at regular temperature**. \n\nIt is typically made by **heating the solvent to dissolve extra solute**, then **cooling the solution slowly and carefully**. It is **not stable**—if a crystal of solute is added or other disturbance occurs, the **excess solute precipitates** out of the solution.",
+    "expected_output": "A supersaturated solution contains more dissolved solute than a saturated solution would normally hold under the same conditions.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What is the difference between a concentrated solution and a dilute solution?",
+    "ai_tutor_response": "A **dilute solution** has a **low concentration** (less solute per given amount of solution), while a **concentrated solution** has a **high concentration** (more solute per given amount of solution).\n\nIn the context of dilution/concentration:\n- **Dilution** = **add solvent**, which **decreases** the solute’s concentration.\n- **Concentration** (in the “concentrating a solution” sense) = **remove solvent**, which **increases** the solute’s concentration.",
+    "expected_output": "A concentrated solution contains a relatively large amount of solute compared with the amount of solvent, while a dilute solution contains a relatively small amount of solute.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What are colligative properties?",
+    "ai_tutor_response": "**Colligative properties** are **properties of solutions that depend only on the number of solute particles in the solution**, not on the identity of those solute particles. \n\nBecause most of a solution is still the **solvent**, many solution properties are similar to those of the pure solvent, but certain measurable differences occur in a predictable way proportional to how many solute particles are present. These measurable differences are called **colligative properties**.",
+    "expected_output": "Colligative properties are solution properties that depend on the number of dissolved particles rather than the chemical identity of the particles.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "Why do ionic solutes often have a bigger effect on colligative properties than molecular solutes?",
+    "ai_tutor_response": "Ionic solutes often have a bigger effect because, when they dissolve, they separate into multiple ions (particles). That increases the total number of dissolved particles in solution, and colligative properties depend on the *number* of solute particles present (not the identity of the solute).\n\nIn other words, for ionic solutes you use the **van’t Hoff factor, i**, which is the number of particles formed per formula unit when the ionic compound dissolves. For example:\n\nNaCl(s) → Na^+(aq) + Cl^-(aq)\n\nSo a 1 M NaCl solution effectively has a higher “particle concentration” (ideal i=2) than a molecular solute where i≈ 1.",
+    "expected_output": "Ionic solutes often have a larger effect because they separate into ions when they dissolve, increasing the total number of dissolved particles.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What does pH tell us, and what does it mean if pH is below 7 or above 7?",
+    "ai_tutor_response": "pH tells you the **relative concentration of hydrogen ions, [H^+], in an aqueous solution**, using the relation:\n\n\npH = -log[H^+]\n\n\nSo it’s a **logarithmic measure** of how much [H^+] is present.\n\n- **If pH < 7**, the solution is **acidic** (meaning [H^+] is comparatively high).\n- **If pH = 7**, the solution is **neutral** (pure water conditions).\n- **If pH > 7**, the solution is **basic** (meaning [H^+] is comparatively low, so [OH^-] is relatively higher).",
+    "expected_output": "pH measures the acidity or basicity of a solution. A pH below 7 indicates an acidic solution, a pH of 7 is neutral, and a pH above 7 indicates a basic solution.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "In a 0.0044 M solution of Ca(OH)2, why is the hydroxide concentration 0.0088 M?",
+    "ai_tutor_response": "Because **Ca(OH)₂ dissociates into ions** such that **each formula unit** produces **2 OH⁻ ions**:\n\n\nCa(OH)_2 → Ca^2+ + 2OH^-\n\n\nSo if the solution is **0.0044 M in Ca(OH)₂**, then the concentration of hydroxide is **twice** that:\n\n\n[OH^-] = 2(0.0044 M) = 0.0088 M\n\n\nThis is the key idea in the example: for strong bases, you use the **stoichiometric ratio from the dissolution equation**, not just the solute concentration.",
+    "expected_output": "Because Ca(OH)2 is a strong base that produces two OH- ions for each formula unit dissolved. Therefore the hydroxide concentration is 2 x 0.0044 M = 0.0088 M.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  },
+  {
+    "_student_question": "What are oxidation numbers used for in chemistry?",
+    "ai_tutor_response": "Oxidation numbers are an **artificial bookkeeping count** used in chemistry—especially for **redox (oxidation–reduction) reactions**—to help track how electrons are effectively assigned to atoms in a chemical reaction.\n\nThey are used to:\n- **Track electrons indirectly** by assigning each atom an oxidation number.\n- **Determine what is oxidized and what is reduced** (since oxidation corresponds to an increase in oxidation number and reduction corresponds to a decrease).\n- Keep straight the difference between **oxidation numbers** and the atom’s **actual charge**: oxidation numbers are not necessarily equal to charge, even though they can be in some cases.",
+    "expected_output": "Oxidation numbers are bookkeeping values used to track how electrons are assigned among atoms. They help chemists identify oxidation and reduction in reactions.",
+    "expert_notes": "",
+    "is_accurate": "",
+    "error_notes": ""
+  }
+]
